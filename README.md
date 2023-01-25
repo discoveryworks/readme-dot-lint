@@ -2,9 +2,7 @@
 A template proposal for Cosmos OSS projects to encourage consistency and completeness of product and technical vision, and to better socialize those goals.
 
 
-Projects to compare and submit PRs for:
-
-https://interchain.io/technology
+Projects to compare and submit PRs for: https://interchain.io/technology
 
 https://github.com/cosmos/cosmos-sdk
 
