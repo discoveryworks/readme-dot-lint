@@ -24,6 +24,12 @@ https://github.com/cosmos/chain-registry
 
 https://github.com/cosmos/cosmos (white paper)
 
+https://github.com/cosmos/iavl
+
+https://github.com/cosmos/cosmos-rust
+
+https://github.com/cosmos/mainnet
+
 https://github.com/cosmos/sdk-tutorials
 
 https://github.com/evmos/ethermint
