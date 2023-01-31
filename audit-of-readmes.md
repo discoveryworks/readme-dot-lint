@@ -95,7 +95,7 @@ https://github.com/cosmos/ibc/blob/main/README.md
 ```
 
 ## Tendermint
-[aoeu](https://raw.githubusercontent.com/tendermint/tendermint/main/README.md)
+https://raw.githubusercontent.com/tendermint/tendermint/main/README.md
 
 ```
 ## Documentation
