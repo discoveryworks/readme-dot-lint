@@ -1,0 +1,19 @@
+                    Downloaded https://raw.githubusercontent.com/cosmos/cosmjs/main/README.md
+                    Downloaded https://raw.githubusercontent.com/cosmos/cosmos-rust/main/README.md
+                    Downloaded https://raw.githubusercontent.com/cosmos/cosmos-sdk/main/README.md
+                    Downloaded https://raw.githubusercontent.com/cosmos/gaia/main/README.md
+                    Downloaded https://raw.githubusercontent.com/cosmos/ibc-go/main/README.md
+                    Downloaded https://raw.githubusercontent.com/cosmos/ibc/main/README.md
+                    Downloaded https://raw.githubusercontent.com/cosmos/interchain-security/main/README.md
+                    Downloaded https://raw.githubusercontent.com/cosmos/relayer/main/README.md
+                    Downloaded https://raw.githubusercontent.com/evmos/ethermint/main/README.md
+                    Downloaded https://raw.githubusercontent.com/tendermint/tendermint/main/README.md
+Failed to download README from https://raw.githubusercontent.com/cosmos/chain-registry
+Failed to download README from https://raw.githubusercontent.com/cosmos/cosmos
+Failed to download README from https://raw.githubusercontent.com/cosmos/cosmos (white paper)
+Failed to download README from https://raw.githubusercontent.com/cosmos/gravity-bridge
+Failed to download README from https://raw.githubusercontent.com/cosmos/iavl
+Failed to download README from https://raw.githubusercontent.com/cosmos/mainnet
+Failed to download README from https://raw.githubusercontent.com/cosmos/relayer/blob/main/README.md
+Failed to download README from https://raw.githubusercontent.com/cosmos/sdk-tutorials
+Failed to download README from https://raw.githubusercontent.com/informalsystems/hermes
