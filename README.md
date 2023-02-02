@@ -1,4 +1,4 @@
-# readme-template
+# README.lint
 
 We believe that folks trying to understand / contribute to the Cosmos ecosystem
 Have a harder time than they need to bc it can be hard to quickly grok a project
