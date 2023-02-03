@@ -87,8 +87,6 @@ A few short lines that address:
 - what does a Viking Saga of Cosmos authorship tree look like?
 
 
-<<<<<<< HEAD
-
 
 =======
 ---
