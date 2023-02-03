@@ -5,7 +5,7 @@ Have a harder time than they need to bc it can be hard to quickly grok a project
 And we could address that at low cost by creating a template for Cosmos OSS projects to encourage consistency and completeness of product and technical vision, and to better socialize those goals.
 
 ## A Plan (v1)
-1. survey a bunch of README structures. What are the common H2s?
+### 1. survey a bunch of README structures. What are the common H2s?
 
 e.g.
 
@@ -18,7 +18,7 @@ e.g.
 - Vision/Mission/Purpose (Statement of Value)
 - repo-specific h2s
 
-1. Standardize a Statement of Value for each repo
+### 2. Standardize a Statement of Value for each repo
 
 A few short lines that address:
 
@@ -31,13 +31,23 @@ A few short lines that address:
 - HOW does this product solve the problem?
 - WHO uses it?
 
-1. Propose a standard template
-   - assert this as a standard
-      - explain what the standard is and why it's useful: "convention over configuration"
-   - create a military badge
-   - link to ICF asking us to do this
-2. Submit PRs amending READMEs to conform to template
+- [ ] HMW do this in a ~one-liner. Does a Lean Hypothesis make sense as a standard?
+      - We believe USER
+      - has a problem with PROBLEM
+      - and we can solve it with SOLUTION
+      - and we'll know we're right if KPI_CHANGE
 
+
+### 3. Propose a standard template
+   - assert this as a standard
+      - [ ] explain what the standard is and why it's useful: "convention over configuration"
+   - [x] create an embedabble badge
+   - link to ICF asking us to make it easier to onboard onto projects
+### 4. Munge READMEs to conform to template
+   1. ONLY add headers and reorder. No edits!
+### 5. Submit PRs amending READMEs to conform to template
+
+---
 
 ## Projects to compare and submit PRs for: https://interchain.io/technology
 
@@ -77,5 +87,123 @@ A few short lines that address:
 - what does a Viking Saga of Cosmos authorship tree look like?
 
 
+<<<<<<< HEAD
 
+
+=======
+---
+
+# Munging existing README's
+
+1. 🌌 Why do we need it?
+2. 🌌 Who is it for?
+3. 🌌 What exactly is it?
+4. 🌌 How do I use it?
+5. 🌌 Other intersting bits
+
+## template / formatting
+```
+I. 🌌 Why
+=============================
+
+
+II. 🌌 Who
+=============================
+
+
+III. 🌌 What
+=============================
+
+
+IV. 🌌 How
+=============================
+
+
+V. 🌌 Other
+=============================
+
+````
+
+v1
+---
+
+I. 🌌 Why
+=============================
+
+
+II. 🌌 Who
+=============================
+
+
+III. 🌌 What
+=============================
+
+
+IV. 🌌 How
+=============================
+
+
+V. 🌌 Other
+=============================
+
+v2
+---
+🌌 Why
+=============================
+
+
+🌌🌌 Who
+=============================
+
+
+🌌🌌🌌 What
+=============================
+
+
+🌌🌌🌌🌌 How
+=============================
+
+
+🌌🌌🌌🌌🌌 Other
+=============================
+
+v3
+---
+Why 🌌
+=============================
+
+
+Who 🌌🌌
+=============================
+
+
+What 🌌🌌🌌
+=============================
+
+
+How 🌌🌌🌌🌌
+=============================
+
+
+Other 🌌🌌🌌🌌🌌
+=============================
+
+---
+```
+
+- I like v2 best. It's visually distinctive, the ordering is pretty clear, but it feels a little less didactic than putting numerals in front
+- I don't like the word "other", it feels too exclusionary and dismissive. It (literally!) "others" the repo-specific stuff that makes this repo a special snowflake that we love. Maybe call it "More"? or something a little more indicative of abundance?
+
+---
+
+## badges
+
+### md
+- ![Conforms to README.lint](https://img.shields.io/badge/README.lint-conforming-brightgreen)
+- ![Does not conform to README.lint](https://img.shields.io/badge/README.lint-non--conforming-red)
+
+### html
+
+<img alt="Conforms to README.lint" src="https://img.shields.io/badge/README.lint-conforming-brightgreen" />
+<img alt="Does not conform to README.lint" src="https://img.shields.io/badge/README.lint-non--conforming-red" />
 
