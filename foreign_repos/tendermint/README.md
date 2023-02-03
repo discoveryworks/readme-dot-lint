@@ -12,11 +12,23 @@ Or [Blockchain](<https://en.wikipedia.org/wiki/Blockchain_(database)>), for shor
 [![Discord chat](https://img.shields.io/discord/669268347736686612.svg)](https://discord.gg/cosmosnetwork)
 [![license](https://img.shields.io/github/license/tendermint/tendermint.svg)](https://github.com/tendermint/tendermint/blob/master/LICENSE)
 [![tendermint/tendermint](https://tokei.rs/b1/github/tendermint/tendermint?category=lines)](https://github.com/tendermint/tendermint)
-[![Sourcegraph](https://sourcegraph.com/github.com/tendermint/tendermint/-/badge.svg)](https://sourcegraph.com/github.com/tendermint/tendermint?badge)
+[![Sourcegraph](https://sourcegraph.com/github.com/tendermint/tendermint/-/badge.svg)](https://sourcegraph.com/github.com/tendermint/tendermint?badge) ![Conforms to README.lint](https://img.shields.io/badge/README.lint-conforming-brightgreen)
 
 | Branch | Tests                                                                                      | Coverage                                                                                                                             | Linting                                                                    |
 |--------|--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
 | master | ![Tests](https://github.com/tendermint/tendermint/workflows/Tests/badge.svg?branch=master) | [![codecov](https://codecov.io/gh/tendermint/tendermint/branch/master/graph/badge.svg)](https://codecov.io/gh/tendermint/tendermint) | ![Lint](https://github.com/tendermint/tendermint/workflows/Lint/badge.svg) |
+
+
+🌌 Why
+=============================
+
+
+🌌🌌 Who
+=============================
+
+
+🌌🌌🌌 What
+=============================
 
 Tendermint Core is a Byzantine Fault Tolerant (BFT) middleware that takes a state transition machine - written in any programming language - and securely replicates it on many machines.
 
@@ -24,6 +36,14 @@ For protocol details, refer to the [Tendermint Specification](./spec/README.md).
 
 For detailed analysis of the consensus protocol, including safety and liveness proofs,
 read our paper, "[The latest gossip on BFT consensus](https://arxiv.org/abs/1807.04938)".
+
+### Roadmap
+
+We keep a public up-to-date version of our roadmap [here](./docs/roadmap/roadmap.md)
+
+
+🌌🌌🌌🌌 How
+=============================
 
 ## Documentation
 
@@ -40,15 +60,6 @@ In any case, if you intend to run Tendermint in production, we're happy to help.
 contact us [over email](mailto:hello@interchain.io) or [join the chat](https://discord.gg/cosmosnetwork).
 
 More on how releases are conducted can be found [here](./RELEASES.md).
-
-## Security
-
-To report a security vulnerability, see our [bug bounty
-program](https://hackerone.com/cosmos).
-For examples of the kinds of bugs we're looking for, see [our security policy](SECURITY.md).
-
-We also maintain a dedicated mailing list for security updates. We will only ever use this mailing list
-to notify you of vulnerabilities and fixes in Tendermint Core. You can subscribe [here](http://eepurl.com/gZ5hQD).
 
 ## Minimum requirements
 
@@ -109,11 +120,21 @@ to the most recent minor release and the second-most recent minor release. Conse
 we strongly recommend keeping Tendermint up-to-date. Upgrading instructions can be found
 in [UPGRADING.md](./UPGRADING.md).
 
+
+
+🌌🌌🌌🌌🌌 Other
+=============================
+
+## Security
+
+To report a security vulnerability, see our [bug bounty
+program](https://hackerone.com/cosmos).
+For examples of the kinds of bugs we're looking for, see [our security policy](SECURITY.md).
+
+We also maintain a dedicated mailing list for security updates. We will only ever use this mailing list
+to notify you of vulnerabilities and fixes in Tendermint Core. You can subscribe [here](http://eepurl.com/gZ5hQD).
+
 ## Resources
-
-### Roadmap
-
-We keep a public up-to-date version of our roadmap [here](./docs/roadmap/roadmap.md)
 
 ### Libraries
 
