@@ -1,12 +1,27 @@
+[![Conforms to README.lint](https://img.shields.io/badge/README.lint-conforming-brightgreen)](https://github.com/strangelove-ventures/readme-dot-lint)
+
 # Chain Registry
+
+🌌 Why
+=============================
+
+
+🌌🌌 Who
+=============================
+
+We invite stakeholders to join the [Cosmos Chain Registry Working Group](https://t.me/+OkM0SDZ-M0liNDdh) on Telegram to discuss major structure changes, ask questions, and develop tooling.
+
+Once schemas have matured and client needs are better understood Chain Registry data is intended to migrate to an on-chain representation hosted on the Cosmos Hub, i.e. the Cosmos Chain Name Service. If you are interested in this effort please join the discussion [here](https://github.com/cosmos/chain-registry/issues/291)!
+
+🌌🌌🌌 What
+=============================
 
 This repo contains a `chain.json` and `assetlist.json` for a number of cosmos-sdk based chains.  A `chain.json` contains data that makes it easy to start running or interacting with a node.
 
 Schema files containing the recommended metadata structure can be found in the `*.schema.json` files located in the root directory. Schemas are still undergoing revision as user needs are surfaced. Optional fields may be added beyond what is contained in the schema files.
 
-We invite stakeholders to join the [Cosmos Chain Registry Working Group](https://t.me/+OkM0SDZ-M0liNDdh) on Telegram to discuss major structure changes, ask questions, and develop tooling.
-
-Once schemas have matured and client needs are better understood Chain Registry data is intended to migrate to an on-chain representation hosted on the Cosmos Hub, i.e. the Cosmos Chain Name Service. If you are interested in this effort please join the discussion [here](https://github.com/cosmos/chain-registry/issues/291)!
+🌌🌌🌌🌌 How
+=============================
 
 ## Npm Modules
 - https://www.npmjs.com/package/chain-registry
@@ -339,3 +354,5 @@ An example ibc metadata file contains the following structure:
   ]
 }
 ```
+🌌🌌🌌🌌🌌 Other
+=============================
