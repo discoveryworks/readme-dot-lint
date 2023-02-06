@@ -1,5 +1,18 @@
 # Cosmos Rust
 
+[![Conforms to README.lint](https://img.shields.io/badge/README.lint-conforming-brightgreen)](https://github.com/strangelove-ventures/readme-dot-lint)
+
+🌌 Why
+=============================
+
+
+🌌🌌 Who
+=============================
+
+
+🌌🌌🌌 What
+=============================
+
 This is a place for commonly shared rust resources related to the Cosmos ecosystem.
 
 ## Crates
@@ -8,6 +21,17 @@ This is a place for commonly shared rust resources related to the Cosmos ecosyst
 |----------------------|-----------------------------|-----------|---------|----------|
 | [`cosmrs`]           | Cosmos SDK for Rust         | [![crates.io][cosmrs-crate-img]][cosmrs-crate-link] | [![docs.rs][cosmrs-docs-img]][cosmrs-docs-link] | [![CI][cosmrs-ci-img]][cosmrs-ci-link] |
 | [`cosmos‑sdk‑proto`] | Proto and gRPC definitions  | [![crates.io][cosmos-sdk-proto-crate-img]][cosmrs-crate-link] | ![docs.rs][cosmos-sdk-proto-docs-img] | [![CI][cosmos-sdk-proto-ci-img]][cosmos-sdk-proto-ci-link] |
+
+
+🌌🌌🌌🌌 How
+=============================
+
+## Minimum Supported Rust Version
+
+Rust **1.59**
+
+🌌🌌🌌🌌🌌 Other
+=============================
 
 ## Merge Policy
 
@@ -32,9 +56,6 @@ all other crates, simply make the required edits in [main.rs](proto-build/main.r
 
     cargo run
 
-## Minimum Supported Rust Version
-
-Rust **1.59**
 
 [//]: # "crates"
 
