@@ -10,19 +10,35 @@
 [![License: Apache-2.0](https://img.shields.io/github/license/cosmos/relayer.svg?style=flat-square)](https://github.com/cosmos/relayer/blob/main/LICENSE)
 [![Lines Of Code](https://img.shields.io/tokei/lines/github/cosmos/relayer?style=flat-square)](https://github.com/cosmos/relayer)
 [![Version](https://img.shields.io/github/tag/cosmos/relayer.svg?style=flat-square)](https://github.com/cosmos/relayer/latest)
+[![Conforms to README.lint](https://img.shields.io/badge/README.lint-conforming-brightgreen)](https://github.com/strangelove-ventures/readme-dot-lint)
+
 </div>
+
+🌌 Why
+=============================
 
 In IBC, blockchains do not directly pass messages to each other over the network. This is where `relayer` comes in. 
 A relayer process monitors for updates on opens paths between sets of [IBC](https://ibcprotocol.org/) enabled chains.
 The relayer submits these updates in the form of specific message types to the counterparty chain. Clients are then used to 
 track and verify the consensus state.
 
+
+---
+
+🌌🌌 Who
+=============================
+
+
+🌌🌌🌌 What
+=============================
+
 In addition to relaying packets, this relayer can open paths across chains, thus creating clients, connections and channels.
 
 Additional information on how IBC works can be found [here](https://ibc.cosmos.network/).
 
----
 
+🌌🌌🌌🌌 How
+=============================
 ## Table Of Contents
 - [Basic Usage - Relaying Across Chains](#Basic-Usage---Relaying-Packets-Across-Chains)
 - [Create Path Across Chains](./docs/create-path-across-chain.md)
@@ -35,6 +51,8 @@ Additional information on how IBC works can be found [here](https://ibc.cosmos.n
 - [Demo/Dev-Environmnet](./examples/README.md)
 
 ---
+
+
 ## Basic Usage - Relaying Packets Across Chains
 
 > The `-h` (help) flag tailing any `rly` command will be your best friend. USE THIS IN YOUR RELAYING JOURNEY.
@@ -201,6 +219,11 @@ Additional information on how IBC works can be found [here](https://ibc.cosmos.n
     ---
     [[TROUBLESHOOTING](docs/troubleshooting.md)]
 ---
+
+
+
+🌌🌌🌌🌌🌌 Other
+=============================
 
 ## Security Notice
 
