@@ -7,8 +7,20 @@
 [![Apache 2.0 Licensed][license-image]][license-link]
 ![Rust Stable][rustc-image]
 ![Rust 1.65+][rustc-version]
+[![Conforms to README.lint](https://img.shields.io/badge/README.lint-conforming-brightgreen)](https://github.com/strangelove-ventures/readme-dot-lint)
 
 Rust implementation of an Inter-Blockchain Communication (IBC) relayer.
+
+🌌 Why
+=============================
+
+
+🌌🌌 Who
+=============================
+
+
+🌌🌌🌌 What
+=============================
 
 This project comprises primarily of 5 crates:
 
@@ -44,6 +56,11 @@ The repository also includes [TLA+ specifications](docs/spec).
 | [ibc-test-framework](./tools/test-framework) | lib                         | [![IBC Test Framework Crate][ibc-test-framework-crate-image]][ibc-test-framework-crate-link] | [![IBC Test Framework Docs][ibc-test-framework-docs-image]][ibc-test-framework-docs-link] |
 
 
+
+
+🌌🌌🌌🌌 How
+=============================
+
 ## Requirements
 
 The crates in this project require Rust `1.65.0`.
@@ -66,6 +83,10 @@ See also [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 We follow [Semantic Versioning](https://semver.org/), though APIs are still
 under active development.
+
+
+🌌🌌🌌🌌🌌 Other
+=============================
 
 ## Resources
 
