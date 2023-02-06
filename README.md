@@ -199,8 +199,8 @@ Other 🌌🌌🌌🌌🌌
 ## badges
 
 ### md
-- ![Conforms to README.lint](https://img.shields.io/badge/README.lint-conforming-brightgreen)
-- ![Does not conform to README.lint](https://img.shields.io/badge/README.lint-non--conforming-red)
+- [![Conforms to README.lint](https://img.shields.io/badge/README.lint-conforming-brightgreen)](https://github.com/strangelove-ventures/readme-dot-lint)
+- [![Does not conform to README.lint](https://img.shields.io/badge/README.lint-non--conforming-red)](https://github.com/strangelove-ventures/readme-dot-lint)
 
 ### html
 
