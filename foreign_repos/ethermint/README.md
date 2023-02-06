@@ -36,9 +36,27 @@ parent:
   <a href="https://codecov.io/gh/tharsis/ethermint">
     <img alt="Code Coverage" src="https://codecov.io/gh/tharsis/ethermint/branch/main/graph/badge.svg" />
   </a>
+  <a href="https://github.com/strangelove-ventures/readme-dot-lint">
+    <img alt="Conforms to README.lint" src="https://img.shields.io/badge/README.lint-conforming-brightgreen" />
+  </a>
+
 </div>
 
+🌌 Why
+=============================
+
+
+🌌🌌 Who
+=============================
+
+
+🌌🌌🌌 What
+=============================
+
 Ethermint is a scalable and interoperable Ethereum library, built on Proof-of-Stake with fast-finality using the [Cosmos SDK](https://github.com/cosmos/cosmos-sdk/) which runs on top of [Tendermint Core](https://github.com/tendermint/tendermint) consensus engine.
+
+🌌🌌🌌🌌 How
+=============================
 
 **Note**: Requires [Go 1.19+](https://golang.org/dl/)
 
@@ -58,6 +76,15 @@ To learn how Ethermint works from a high-level perspective, go to the [Introduct
 
 For an example on how Ethermint can be used on any Cosmos-SDK chain, please refer to [Evmos](https://www.github.com/tharsis/evmos).
 
+## Contributing
+
+Looking for a good place to start contributing? Check out some [`good first issues`](https://github.com/evmos/ethermint/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22).
+
+For additional instructions, standards and style guides, please refer to the [Contributing](./CONTRIBUTING.md) document.
+
+🌌🌌🌌🌌🌌 Other
+=============================
+
 ## Community
 
 The following chat channels and forums are a great spot to ask questions about Ethermint:
@@ -66,12 +93,6 @@ The following chat channels and forums are a great spot to ask questions about E
 - [Evmos Discord](https://discord.gg/trje9XuAmy)
 - [Evmos Telegram](https://t.me/EvmosOrg)
 - [Tharsis Twitter](https://twitter.com/TharsisHQ)
-
-## Contributing
-
-Looking for a good place to start contributing? Check out some [`good first issues`](https://github.com/evmos/ethermint/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22).
-
-For additional instructions, standards and style guides, please refer to the [Contributing](./CONTRIBUTING.md) document.
 
 ## Careers
 
