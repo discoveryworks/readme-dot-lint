@@ -87,8 +87,6 @@ A few short lines that address:
 - what does a Viking Saga of Cosmos authorship tree look like?
 
 
-
-=======
 ---
 
 # Munging existing README's
@@ -201,7 +199,11 @@ Other 🌌🌌🌌🌌🌌
 - [![Does not conform to README.lint](https://img.shields.io/badge/README.lint-non--conforming-red)](https://github.com/strangelove-ventures/readme-dot-lint)
 
 ### html
+<a href="https://github.com/strangelove-ventures/readme-dot-lint">
+  <img alt="Conforms to README.lint" src="https://img.shields.io/badge/README.lint-conforming-brightgreen" />
+</a>
 
-<img alt="Conforms to README.lint" src="https://img.shields.io/badge/README.lint-conforming-brightgreen" />
-<img alt="Does not conform to README.lint" src="https://img.shields.io/badge/README.lint-non--conforming-red" />
+<a href="https://github.com/strangelove-ventures/readme-dot-lint">
+  <img alt="Does not conform to README.lint" src="https://img.shields.io/badge/README.lint-non--conforming-red" />
+</a>
 
