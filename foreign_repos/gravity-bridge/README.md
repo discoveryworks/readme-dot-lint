@@ -6,19 +6,30 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/cosmos/peggy)](https://goreportcard.com/report/github.com/cosmos/peggy)
 [![LoC](https://tokei.rs/b1/github/cosmos/peggy)](https://github.com/cosmos/peggy)
 [![API Reference](https://godoc.org/github.com/cosmos/peggy?status.svg)](https://godoc.org/github.com/cosmos/peggy)
+[![Conforms to README.lint](https://img.shields.io/badge/README.lint-conforming-brightgreen)](https://github.com/strangelove-ventures/readme-dot-lint)
 
 > :warning: :warning: **WARNING: This bridge is not production ready. There is at least one known security vulnerability. See: [181](https://github.com/cosmos/peggy/issues/181).**
 
 
+🌌 Why
+=============================
+
+
+🌌🌌 Who
+=============================
+
+
+🌌🌌🌌 What
+=============================
 ## Introduction
 
 Peggy is the starting point for cross chain value transfers from the Ethereum blockchain to Cosmos-SDK based blockchains as part of the Ethereum Cosmos Bridge project. The system accepts incoming transfers of Ethereum tokens on an Ethereum smart contract, locking them while the transaction is validated and equitable funds issued to the intended recipient on the Cosmos bridge chain. The system supports value transfers from Cosmos-SDK based blockchains to the Ethereum blockchain as well through a reverse process.
 
+
+🌌🌌🌌🌌 How
+=============================
+
 **Note**: Requires [Go 1.13+](https://golang.org/dl/)
-
-## Disclaimer
-
-This codebase, including all smart contract components, has **not** been professionally audited and is not intended for use in a production environment. As such, users should **NOT** trust the system to securely hold mainnet funds. Any developers attempting to use Peggy on the mainnet at this time will need to develop their own smart contracts or find another implementation.
 
 ## Installation
 
@@ -92,6 +103,18 @@ Note: For checking account details/balance, you will need to change the cosmos a
 ## Using the modules in other projects
 
 The ethbridge and oracle modules can be used in other cosmos-sdk applications by copying them into your application's modules folders and including them in the same way as in the example application. Each module may be moved to its own repo or integrated into the core Cosmos-SDK in future, for easier usage.
+
+
+🌌🌌🌌🌌🌌 Other
+=============================
+
+
+
+
+## Disclaimer
+
+This codebase, including all smart contract components, has **not** been professionally audited and is not intended for use in a production environment. As such, users should **NOT** trust the system to securely hold mainnet funds. Any developers attempting to use Peggy on the mainnet at this time will need to develop their own smart contracts or find another implementation.
+
 
 ## Architecture
 
