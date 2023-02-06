@@ -4,7 +4,21 @@
   <a href="https://github.com/cosmos/cosmjs/blob/main/LICENSE">
     <img alt="License: Apache-2.0" src="https://img.shields.io/github/license/cosmos/cosmjs.svg" />
   </a>
+  <a href="https://github.com/strangelove-ventures/readme-dot-lint">
+    <img alt="Conforms to README.lint" src="https://img.shields.io/badge/README.lint-conforming-brightgreen" />
+  </a>
 </div>
+
+🌌 Why
+=============================
+
+
+🌌🌌 Who
+=============================
+
+
+🌌🌌🌌 What
+=============================
 
 CosmJS is the Swiss Army knife to power JavaScript based client solutions
 ranging from Web apps/explorers over browser extensions to server-side clients
@@ -13,30 +27,20 @@ like faucets/scrapers in the Cosmos ecosystem.
 "Cosm" is short for Cosmos and "JS" is short for _runs everywhere_ – we actually
 develop in TypeScript.
 
-## Documentation
+## Roadmap
 
-[Here is a list of examples][guided tour] using the Stargate package for use
-with [Cosmos SDK 0.41] applications (like [gaia 4]). Take a look at the wiki
-page,
-["What can CosmJS do for me?"](https://github.com/cosmos/cosmjs/wiki/What-can-CosmJS-do-for-me%3F)
-and various tests
-([ex](https://github.com/cosmos/cosmjs/blob/main/packages/stargate/src/signingstargateclient.spec.ts))
-for more example usage of the packages.
+We maintain a [development board](https://github.com/orgs/cosmos/projects/6),
+use [release milestones](https://github.com/cosmos/cosmjs/milestones) and share
+important updates in the [CosmWasm Community Call]. For higher level roadmap
+discussion please reach out to the team.
 
-[guided tour]:
-  https://gist.github.com/webmaster128/8444d42a7eceeda2544c8a59fbd7e1d9
-[cosmos sdk 0.41]: https://github.com/cosmos/cosmos-sdk/tree/v0.41.0
-[gaia 4]: https://github.com/cosmos/gaia/tree/v4.0.0
+[cosmwasm community call]:
+  https://github.com/CosmWasm/cosmwasm/issues?q=label%3A%22Community+Call+%F0%9F%97%BA%F0%9F%93%9E%22
 
-### API documentation
 
-The full API documentation is hosted at [cosmos.github.io/cosmjs]. This is a bit
-tricky to navigate and requires basic TypeScript understanding. It is helpful if
-you want to look up details for advanced use cases. This documentation is
-auto-generated based on the current main branch and can occasionally diverge
-from the latest release.
 
-[cosmos.github.io/cosmjs]: https://cosmos.github.io/cosmjs
+🌌🌌🌌🌌 How
+=============================
 
 ### Using custom Stargate modules
 
@@ -155,15 +159,38 @@ module.exports = [
 ];
 ```
 
-## Roadmap
 
-We maintain a [development board](https://github.com/orgs/cosmos/projects/6),
-use [release milestones](https://github.com/cosmos/cosmjs/milestones) and share
-important updates in the [CosmWasm Community Call]. For higher level roadmap
-discussion please reach out to the team.
+🌌🌌🌌🌌🌌 Other
+=============================
 
-[cosmwasm community call]:
-  https://github.com/CosmWasm/cosmwasm/issues?q=label%3A%22Community+Call+%F0%9F%97%BA%F0%9F%93%9E%22
+
+
+
+## Documentation
+
+[Here is a list of examples][guided tour] using the Stargate package for use
+with [Cosmos SDK 0.41] applications (like [gaia 4]). Take a look at the wiki
+page,
+["What can CosmJS do for me?"](https://github.com/cosmos/cosmjs/wiki/What-can-CosmJS-do-for-me%3F)
+and various tests
+([ex](https://github.com/cosmos/cosmjs/blob/main/packages/stargate/src/signingstargateclient.spec.ts))
+for more example usage of the packages.
+
+[guided tour]:
+  https://gist.github.com/webmaster128/8444d42a7eceeda2544c8a59fbd7e1d9
+[cosmos sdk 0.41]: https://github.com/cosmos/cosmos-sdk/tree/v0.41.0
+[gaia 4]: https://github.com/cosmos/gaia/tree/v4.0.0
+
+### API documentation
+
+The full API documentation is hosted at [cosmos.github.io/cosmjs]. This is a bit
+tricky to navigate and requires basic TypeScript understanding. It is helpful if
+you want to look up details for advanced use cases. This documentation is
+auto-generated based on the current main branch and can occasionally diverge
+from the latest release.
+
+[cosmos.github.io/cosmjs]: https://cosmos.github.io/cosmjs
+
 
 ## Known limitations
 
