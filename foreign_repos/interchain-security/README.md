@@ -12,9 +12,13 @@
 🌌 Why
 =============================
 
+Zones want to bootstrap using Cosmos Hub security because it's cheaper and easier than building out their own validator set.
+
 
 🌌🌌 Who
 =============================
+
+Interchain Security is for anyone building new CosmosSDK-based blockchains.
 
 
 🌌🌌🌌 What
