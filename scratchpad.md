@@ -200,6 +200,81 @@ How 🌌🌌🌌🌌
 Other 🌌🌌🌌🌌🌌
 =============================
 
+
+## Susannah
+
+### Let's revisit the emoji choice
+
+v4 - emoji exploration
+---
+# 🌌 Why does ${REPO_NAME} exist?
+# 🌌 Why have a ${REPO_NAME} repo?
+
+
+# 🌌 Why ${REPO_NAME}?
+# 🌌 Whence ${REPO_NAME}?
+# 🌌 Whilst ${REPO_NAME}?
+
+# 🌌 Why Gaia?
+# 🌌 Why ibc-go?
+
+
+# 🌌 Why horcrux?
+# 🌌 Why does horcrux exist?
+# 🌌 Why have a horcrux repo?
+# 🌌 Why use horcrux?
+## 🌌 People use horcrux because they got tired of pagerduty waking them up at night.
+# 🌌 Why use ibc-apps?
+## 🌌 Because abstracting an easily discoverable, navigable, central place for modules and middleware from core ibc-go makes the interblockchain better.
+## 🌌 Because finding the best modules is part of what makes interblockchain the best.
+## 🌌 Because expanding what you can do w/ ibc
+## 🌌 Because the interblockchain has the best damn app store of any chain around.
+## 🌌 Because the ibc developers need an app store.
+## 🌌 Because ibc deserves a package manager. (This registry is a start.)
+## 🌌 Because ibc deserves its own apt-get or homebrew.
+
+## Todo
+- TODO: let's workshop "why/because" around a little
+- review `ibc-apps` PR comments
+- pair on "what would ibc-go look like on README.lint"
+- add @womensrights and @crodriguezvega to the README.lint repo
+- add commented-out defaults to the template/readme
+  - ``` # How
+        // ppl usually list topics like installation, contributing, etc
+    ``` <- - [ ]review the initial spreadsheet scratchpad for mappings
+
+---
+Early IBC work started in the ibc-go repo. As the repo grew, the need arose to parallelize the work among many teams.
+
+The ibc-apps repo is meant to be an easily discoverable, navigable, central place for modules and middleware.
+
+SHIP THIS: "Why...because"
+
+# 🌌🌌 Who ${BENEFITS FROM THIS REPO}
+# 🌌🌌🌌 What ${EXACTLY DOES THIS DO?}
+# 🌌🌌🌌🌌 How ${DO I USE IT? HOW DOES IT WORK?}
+# 🌌🌌🌌🌌🌌 Other
+
+
+## ibc-go w/ Susannah
+
+## Who is ibc-go for?
+
+- Cosmos SDK chain developers who use IBC,
+- Cross-chain Developers who access Cosmos and IBC via Light Clients, smart contracts, relayers, and more.
+
+---
+
+### who - scratchpad
+Guests
+- Light Client developers who want to connect to the Interchain
+  - L1s that aren't on Cosmos and the want a Go Light Client
+
+- App devs working on IBC-enabled cosmwasm contracts or building their own custom middleware
+- Relayer operators who're interested in the most-used implementation in production.
+- Chain developers who want to use IBC // eg penumbra, anoma, nomic
+
+
 ---
 ```
 
