@@ -20,7 +20,7 @@
 - https://github.com/strangelove-ventures/cns => https://raw.githubusercontent.com/strangelove-ventures/cns/main/README.md
 - https://github.com/strangelove-ventures/paramauthority => https://raw.githubusercontent.com/strangelove-ventures/paramauthority/main/README.md
 - https://github.com/strangelove-ventures/graz-vite-example => https://raw.githubusercontent.com/strangelove-ventures/graz-vite-example/main/README.md
-- 
+-
 https://raw.githubusercontent.com/strangelove-ventures/horcrux/main/README.md
 https://raw.githubusercontent.com/strangelove-ventures/lens/main/README.md
 https://raw.githubusercontent.com/strangelove-ventures/interchaintest/main/README.md
@@ -37,7 +37,7 @@ https://raw.githubusercontent.com/strangelove-ventures/style-guide/main/README.m
 https://raw.githubusercontent.com/strangelove-ventures/cns/main/README.md
 https://raw.githubusercontent.com/strangelove-ventures/paramauthority/main/README.md
 https://raw.githubusercontent.com/strangelove-ventures/graz-vite-example/main/README.md
-- 
+-
 
 
 
@@ -388,3 +388,12 @@ Guests
 
 - I like v2 best. It's visually distinctive, the ordering is pretty clear, but it feels a little less didactic than putting numerals in front
 - I don't like the word "other", it feels too exclusionary and dismissive. It (literally!) "others" the repo-specific stuff that makes this repo a special snowflake that we love. Maybe call it "More"? or something a little more indicative of abundance?
+
+---
+
+## To move to ibc-apps
+
+| Description                                                                                                                                                                                                                                            | Repository                                                                                     | Type         |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|--------------|
+| An application that enables on chain querying of another IBC enabled chain utilizing `baseapp.Query`. Both chains must have implemented the query application and ICA (for queries requiring consensus).                                               | [async-icq](https://github.com/strangelove-ventures/async-icq)                                 | `app`        |
+| Middleware enabling a packet to be sent to a destination chain via an intermediate chain, e.g. going from Juno to Osmosis via the Hub.                                                                                                                 | [packet-forward-middleware](https://github.com/strangelove-ventures/packet-forward-middleware) | `middleware` |
