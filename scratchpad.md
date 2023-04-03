@@ -52,7 +52,7 @@ e.g.
 - Quickstart
 - Contributing
 - License
-- Contact info 
+- Contact info
 - Audience
 - Vision/Mission/Purpose (Statement of Value)
 - repo-specific h2s
@@ -205,7 +205,7 @@ Other 🌌🌌🌌🌌🌌
 
 ### Let's revisit the emoji choice
 
-v4 - emoji exploration
+## v4 - emoji exploration
 ---
 # 🌌 Why does ${REPO_NAME} exist?
 # 🌌 Why have a ${REPO_NAME} repo?
@@ -224,6 +224,8 @@ v4 - emoji exploration
 # 🌌 Why have a horcrux repo?
 # 🌌 Why use horcrux?
 ## 🌌 People use horcrux because they got tired of pagerduty waking them up at night.
+
+---
 # 🌌 Why use ibc-apps?
 ## 🌌 Because abstracting an easily discoverable, navigable, central place for modules and middleware from core ibc-go makes the interblockchain better.
 ## 🌌 Because finding the best modules is part of what makes interblockchain the best.
@@ -248,13 +250,103 @@ Early IBC work started in the ibc-go repo. As the repo grew, the need arose to p
 
 The ibc-apps repo is meant to be an easily discoverable, navigable, central place for modules and middleware.
 
-SHIP THIS: "Why...because"
+- [ ] SHIP THIS: "Why...because"
+
+## v5 - better verbiage
+# 🌌 Why use ${REPO_NAME}?
+Because...
 
 # 🌌🌌 Who ${BENEFITS FROM THIS REPO}
 # 🌌🌌🌌 What ${EXACTLY DOES THIS DO?}
 # 🌌🌌🌌🌌 How ${DO I USE IT? HOW DOES IT WORK?}
 # 🌌🌌🌌🌌🌌 Other
 
+---
+## v6 - workshopping emoji
+
+- `README.lint` ought not be cosmos-specific; "🌌" is a poor choice
+- choose another emoji?
+- or maybe the convention is "each project picks it's own single emoji"
+- or maybe the convention is "each project picks any emoji, as long as the number of emoji matches the ordinal order"
+
+### HMW represent "Why", "Who", "What" etc... as concepts? Or a class of questions or attributes?
+#### 🌸 flowers are nice
+
+```
+# 🌸 Why use ${REPO_NAME}?
+Because...
+
+# 🌸🌸 Who ${BENEFITS FROM THIS REPO}
+# 🌸🌸🌸 What ${EXACTLY DOES THIS DO?}
+# 🌸🌸🌸🌸 How ${DO I USE IT? HOW DOES IT WORK?}
+# 🌸🌸🌸🌸🌸 Other
+```
+---
+
+#### 🌻 are bright and optimistic
+```
+# 🌻 Why use ${REPO_NAME}?
+# 🌻🌻 Who ${BENEFITS FROM THIS REPO}
+# 🌻🌻🌻 What ${EXACTLY DOES THIS DO?}
+# 🌻🌻🌻🌻 How ${DO I USE IT? HOW DOES IT WORK?}
+# 🌻🌻🌻🌻🌻 Other
+```
+but maybe a little too shiny
+
+---
+
+#### 🌱 sprouts grow into a sturdy oak!
+```
+# 🌱 Why use ${REPO_NAME}?
+# 🌿🌿 Who ${BENEFITS FROM THIS REPO}
+# 🌳🌳🌳 What ${EXACTLY DOES THIS DO?}
+# 🌴🌴🌴🌴 How ${DO I USE IT? HOW DOES IT WORK?}
+# 🌲🌲🌲🌲🌲 Other
+```
+Nah. Distracting. "Grow into oak..." maps to FLOSS software, but not to the Why/Who/What... axis.
+
+---
+
+#### 🧭 Direction! Pathfinding!
+```
+# 🧭 Why use ${REPO_NAME}?
+# 🧭🧭 Who ${BENEFITS FROM THIS REPO}
+# 🧭🧭🧭 What ${EXACTLY DOES THIS DO?}
+# 🧭🧭🧭🧭 How ${DO I USE IT? HOW DOES IT WORK?}
+# 🧭🧭🧭🧭🧭 Other
+```
+Not terrible. But a little boring.
+
+---
+
+#### 🗻 Mountains! Solid. Variety.
+```
+# ⛰ Why use ${REPO_NAME}?
+# 🏕🏕 Who ${BENEFITS FROM THIS REPO}
+# 🏔🏔🏔 What ${EXACTLY DOES THIS DO?}
+# 🌋🌋🌋🌋 How ${DO I USE IT? HOW DOES IT WORK?}
+# 🗻🗻🗻🗻🗻 Other
+```
+....maybe? The snow progression metaphor feels a little weird.
+
+---
+#### 🗽 Liberty
+```
+# 🗽 Why use ${REPO_NAME}?
+# 🗽🗽 Who ${BENEFITS FROM THIS REPO}
+# 🗽🗽🗽 What ${EXACTLY DOES THIS DO?}
+# 🗽🗽🗽🗽 How ${DO I USE IT? HOW DOES IT WORK?}
+# 🗽🗽🗽🗽🗽 Other
+```
+Kinda cool. Embodies "ideals enshrined in matter". Has personhood (who), location (where), ideal of liberty (why), engineering marvel (how). Pretty strong. Does it scan differently i8'lly? USA? France? Iraq?
+
+---
+
+### Emoji in general
+-
+
+
+---
 
 ## ibc-go w/ Susannah
 
