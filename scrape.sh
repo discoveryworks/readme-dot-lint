@@ -2,6 +2,7 @@
 
 repos=(
 
+# general cosmos repos
   "https://raw.githubusercontent.com/cosmos/cosmos-sdk"
   "https://raw.githubusercontent.com/cosmos/gaia"
   "https://raw.githubusercontent.com/cosmos/ibc"
@@ -21,6 +22,25 @@ repos=(
   "https://raw.githubusercontent.com/informalsystems/hermes"
   "https://raw.githubusercontent.com/cosmos/relayer"
   "https://raw.githubusercontent.com/cosmos/cosmos"
+
+
+# strangelove repos
+  "https://raw.githubusercontent.com/strangelove-ventures/horcrux"
+  "https://raw.githubusercontent.com/strangelove-ventures/lens"
+  "https://raw.githubusercontent.com/strangelove-ventures/interchaintest"
+  "https://raw.githubusercontent.com/strangelove-ventures/graz"
+  "https://raw.githubusercontent.com/strangelove-ventures/half-life"
+  "https://raw.githubusercontent.com/strangelove-ventures/packet-forward-middleware"
+  "https://raw.githubusercontent.com/strangelove-ventures/heighliner"
+  "https://raw.githubusercontent.com/strangelove-ventures/cosmos-operator"
+  "https://raw.githubusercontent.com/strangelove-ventures/async-icq"
+  "https://raw.githubusercontent.com/strangelove-ventures/lens-examples"
+  "https://raw.githubusercontent.com/strangelove-ventures/sommelier"
+  "https://raw.githubusercontent.com/strangelove-ventures/noble"
+  "https://raw.githubusercontent.com/strangelove-ventures/style-guide"
+  "https://raw.githubusercontent.com/strangelove-ventures/cns"
+  "https://raw.githubusercontent.com/strangelove-ventures/paramauthority"
+  "https://raw.githubusercontent.com/strangelove-ventures/graz-vite-example"
 
 )
 

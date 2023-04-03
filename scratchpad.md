@@ -1,4 +1,49 @@
-## A Plan (v1)
+## A Plan (v2)
+
+## Strangelove projects for which we can lint README's
+
+ https://github.com/search?q=user:strangelove-ventures&type=repositories
+
+- https://github.com/strangelove-ventures/horcrux => https://raw.githubusercontent.com/strangelove-ventures/horcrux/main/README.md
+- https://github.com/strangelove-ventures/lens => https://raw.githubusercontent.com/strangelove-ventures/lens/main/README.md
+- https://github.com/strangelove-ventures/interchaintest => https://raw.githubusercontent.com/strangelove-ventures/interchaintest/main/README.md
+- https://github.com/strangelove-ventures/graz => https://raw.githubusercontent.com/strangelove-ventures/graz/main/README.md
+- https://github.com/strangelove-ventures/half-life => https://raw.githubusercontent.com/strangelove-ventures/half-life/main/README.md
+- https://github.com/strangelove-ventures/packet-forward-middleware => https://raw.githubusercontent.com/strangelove-ventures/packet-forward-middleware/main/README.md
+- https://github.com/strangelove-ventures/heighliner => https://raw.githubusercontent.com/strangelove-ventures/heighliner/main/README.md
+- https://github.com/strangelove-ventures/cosmos-operator => https://raw.githubusercontent.com/strangelove-ventures/cosmos-operator/main/README.md
+- https://github.com/strangelove-ventures/async-icq => https://raw.githubusercontent.com/strangelove-ventures/async-icq/main/README.md
+- https://github.com/strangelove-ventures/lens-examples => https://raw.githubusercontent.com/strangelove-ventures/lens-examples/main/README.md
+- https://github.com/strangelove-ventures/sommelier => https://raw.githubusercontent.com/strangelove-ventures/sommelier/main/README.md
+- https://github.com/strangelove-ventures/noble => https://raw.githubusercontent.com/strangelove-ventures/noble/main/README.md
+- https://github.com/strangelove-ventures/style-guide => https://raw.githubusercontent.com/strangelove-ventures/style-guide/main/README.md
+- https://github.com/strangelove-ventures/cns => https://raw.githubusercontent.com/strangelove-ventures/cns/main/README.md
+- https://github.com/strangelove-ventures/paramauthority => https://raw.githubusercontent.com/strangelove-ventures/paramauthority/main/README.md
+- https://github.com/strangelove-ventures/graz-vite-example => https://raw.githubusercontent.com/strangelove-ventures/graz-vite-example/main/README.md
+- 
+https://raw.githubusercontent.com/strangelove-ventures/horcrux/main/README.md
+https://raw.githubusercontent.com/strangelove-ventures/lens/main/README.md
+https://raw.githubusercontent.com/strangelove-ventures/interchaintest/main/README.md
+https://raw.githubusercontent.com/strangelove-ventures/graz/main/README.md
+https://raw.githubusercontent.com/strangelove-ventures/half-life/main/README.md
+https://raw.githubusercontent.com/strangelove-ventures/packet-forward-middleware/main/README.md
+https://raw.githubusercontent.com/strangelove-ventures/heighliner/main/README.md
+https://raw.githubusercontent.com/strangelove-ventures/cosmos-operator/main/README.md
+https://raw.githubusercontent.com/strangelove-ventures/async-icq/main/README.md
+https://raw.githubusercontent.com/strangelove-ventures/lens-examples/main/README.md
+https://raw.githubusercontent.com/strangelove-ventures/sommelier/main/README.md
+https://raw.githubusercontent.com/strangelove-ventures/noble/main/README.md
+https://raw.githubusercontent.com/strangelove-ventures/style-guide/main/README.md
+https://raw.githubusercontent.com/strangelove-ventures/cns/main/README.md
+https://raw.githubusercontent.com/strangelove-ventures/paramauthority/main/README.md
+https://raw.githubusercontent.com/strangelove-ventures/graz-vite-example/main/README.md
+- 
+
+
+
+
+
+
 ### 1. survey a bunch of README structures. What are the common H2s?
 
 e.g.
@@ -41,30 +86,6 @@ A few short lines that address:
    1. ONLY add headers and reorder. No edits!
 
 ### 5. Submit PRs amending READMEs to conform to template
-
----
-
-## Projects to compare and submit PRs for: https://interchain.io/technology
-
-- https://github.com/cosmos/cosmos-sdk
-- https://github.com/cosmos/gaia
-- https://github.com/cosmos/ibc
-- https://github.com/tendermint/tendermint
-- High stars from https://github.com/orgs/cosmos/repositories?q=&type=all&language=&sort=stargazers
-- https://github.com/cosmos/ibc-go
-- https://github.com/cosmos/interchain-security
-- https://github.com/cosmos/relayer
-- https://github.com/cosmos/chain-registry
-- https://github.com/cosmos/cosmos (white paper)
-- https://github.com/cosmos/iavl
-- https://github.com/cosmos/cosmos-rust
-- https://github.com/cosmos/mainnet
-- https://github.com/cosmos/sdk-tutorials
-- https://github.com/evmos/ethermint
-- https://github.com/cosmos/gravity-bridge
-- https://github.com/cosmos/cosmjs
-- More ideas on https://github.com/cosmos/awesome-cosmos
-
 
 ---
 
