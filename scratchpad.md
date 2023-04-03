@@ -342,6 +342,22 @@ Kinda cool. Embodies "ideals enshrined in matter". Has personhood (who), locatio
 
 ---
 
+#### IDEA: what if each project picks their own emoji?
+
+- we could have a sane default
+- we could say "choose your own"
+- the only rules:
+   1. stick w/ one emoji, don't mix-n-match
+   2. stay consistent w/ the headers (e.g. "H1" is Why, H2 must always be "Who..." etc.)
+
+# ⛰ Why use ${REPO_NAME}?
+# 🏕 Who ${BENEFITS FROM THIS REPO}
+# 🏔 What ${EXACTLY DOES THIS DO?}
+# 🌋 How ${DO I USE IT? HOW DOES IT WORK?}
+# 🗻 Other
+
+---
+
 ### Emoji in general
 -
 

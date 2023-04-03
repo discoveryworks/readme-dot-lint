@@ -4,62 +4,76 @@
 
 
 
-🌌 Why
+🌌 Why use README.lint?
 =============================
 - *We believe that new folks* trying to understand / contribute to the Cosmos ecosystem
 - *Have a harder time than they need to* because it can be hard to quickly grok a project
 - *And we could address that at low cost by* creating a template for Cosmos OSS projects to encourage consistency and completeness of product and technical vision, and to better socialize those goals.
 
 
-🌌🌌 Who
+🌌🌌 Who benefits from it?
 =============================
 
-> NB: "Who" and "Why" are kind of conflated into that Lean Hypothesis, above. Does that imply a LH oughtta go elsewhere? Or that "Who/Why" isn't the right construction?
+README.lint is for anyone reading a bunch of README's, trying to wrap their head around interrelated repos.
 
-🌌🌌🌌 What
+It can also help repo authors talk through and memorialize big questions like "Why use it?" and "Who is this for?" (which are often unambiguous in the beginning, but can get fuzzy as a project evolves).
+
+🌌🌌🌌 What does it do?
 =============================
 
 In the spirit of [Convention Over Configuration](https://en.wikipedia.org/wiki/Convention_over_configuration), README.lint is a sane default template for a readme. The hope is that users will be able to more easily ramp up on new repos if they know what to expect in the documentation—and that the template can incline authors towards making explicit a core set of concerns, namely:
-- "Why did we see the need to spend time and energy building this?", 
-- "Who is this repo for?", 
+- "Why did we see the need to spend time and energy building this?",
+- "Who is this repo for?",
 - "What, exactly, is this thing?"
 - "How do I set it up? How do I use it?", and
 - Anything else that doesn't fit into the above categories.
 
-🌌🌌🌌🌌 How
+🌌🌌🌌🌌 How do I use it?
 =============================
 
 1. Audit existing repos and, without changing anything other than position, organizing the repos into following sections:
 
 ```
-🌌 Why
+🌌 Why use ${REPO_NAME}?
 =============================
 
 
-🌌🌌 Who
+🌌🌌 Who ${BENEFITS FROM THIS REPO}
 =============================
 
 
-🌌🌌🌌 What
+🌌🌌🌌 What ${EXACTLY DOES THIS DO?}
 =============================
 
 
-🌌🌌🌌🌌 How
+🌌🌌🌌🌌 How ${DO I USE IT? HOW DOES IT WORK?}
 =============================
 
 
-🌌🌌🌌🌌🌌 Other
+🌌🌌🌌🌌🌌 Extras
 =============================
 
 ```
-2. submitting PRs to those repos
-3. ...one day, maybe try upgrade this into an actual automated linter. For now, humans do the work.
-
-🌌🌌🌌🌌🌌 Other
+🌌🌌🌌🌌🌌 Extras
 =============================
+
+### What's `Extras` for?
+This can be a place for anything that doesn't fit into the {Why, Who, What, How} categories. The idea is to make it really easy to backport existing repos into README.lint, so "Extras" makes for easier adaptation.
+
+### Why do we use the `===` markdown syntax for h1s?
+
+Most people use the markdown `#` syntax for H1s. By using the less common, visually more distinctive `===` syntax, we'll often have an easier time distinguishing the meta (README.lint H1s) from the main content (H1s from the imported repo.)
+
+---
+
+### Proposed process
+
+1. submit PRs to any repos which we think would benefit and start a conversation with the authors
+2. ...one day, maybe try upgrade this into an actual automated linter. For now, humans do the work.
+
 ## Badges
 
-In order to 1) spread the word, and 2) imply that this exercise is on par with other efforts to ensure consistancy and standards across software, we made a badge!
+In order to 1) spread the word, and 2) imply that this exercise is on par with other efforts to ensure consistency and standards across software, we made a badge!
 
 
 [![Conforms to README.lint](https://img.shields.io/badge/README.lint-conforming-brightgreen)](https://github.com/strangelove-ventures/readme-dot-lint)
@@ -68,11 +82,11 @@ In order to 1) spread the word, and 2) imply that this exercise is on par with o
 ### Markdown
 ```
 Conforming:
-   
+
    [![Conforms to README.lint](https://img.shields.io/badge/README.lint-conforming-brightgreen)](https://github.com/strangelove-ventures/readme-dot-lint)
 
 Non-Conforming:
-   
+
    [![Does not conform to README.lint](https://img.shields.io/badge/README.lint-non--conforming-red)](https://github.com/strangelove-ventures/readme-dot-lint)
 ```
 
