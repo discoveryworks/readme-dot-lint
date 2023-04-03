@@ -32,24 +32,40 @@
     <img alt="Imported by" src="https://sourcegraph.com/github.com/cosmos/ibc-go/-/badge.svg" />
   </a>
     <img alt="Tests / Code Coverage Status" src="https://github.com/cosmos/ibc-go/workflows/Tests%20/%20Code%20Coverage/badge.svg" />
-    <img alt="E2E Status" src="https://github.com/cosmos/ibc-go/workflows/Tests%20/%20E2E/badge.svg" />  
+    <img alt="E2E Status" src="https://github.com/cosmos/ibc-go/workflows/Tests%20/%20E2E/badge.svg" />
     <img alt="Conforms to README.lint" src="https://img.shields.io/badge/README.lint-conforming-brightgreen" />
 
 </div>
 
-🌌 Why
+🌌 Why does the world need IBC-go?
 =============================
 
-The [Inter-Blockchain Communication protocol (IBC)](https://ibcprotocol.dev/) allows blockchains to talk to each other. This end-to-end, connection-oriented, stateful protocol provides reliable, ordered, and authenticated communication between heterogeneous blockchains. 
+// TODO: clean this bit up
+// why is IBC different and better than the competetiors?
+
+Because a universal trust-minimized interoperability protocol is necessary to avoid silos of value or information, and in order to work, there must be a standard.
+
+- the promise of blockchain demands general-purpose  ____
+- the promise of inter-blockchain
+- app chains
+- in order to scale
+- allows more than tokens: general message passing
+- rent-free; there's no freedom with vendor lock-in
+
+The [Inter-Blockchain Communication protocol (IBC)](https://ibcprotocol.dev/) allows blockchains to talk to each other. This end-to-end, connection-oriented, stateful protocol provides reliable, ordered, and authenticated communication between heterogeneous blockchains.
 
 
-🌌🌌 Who
+🌌🌌 Who is IBC-go for?
 =============================
 
+- Chain developers who use the CosmosSDK, as well as
+- Cross-chain Developers who access Cosmos and IBC via Light Clients, smart contracts, relayers, and more.
 
-🌌🌌🌌 What
+
+🌌🌌🌌 What is the IBC-go software?
 =============================
 
+IBC-go is the most up-to-date implementation of the transport layer semantics for IBC.
 ## Roadmap
 
 For an overview of upcoming changes to ibc-go take a look at the [roadmap](./docs/roadmap/roadmap.md).
@@ -60,14 +76,14 @@ For the latest expected release timelines, please check [here](https://github.co
 
 For the latest information on the progress of the work or the decisions made that might influence the roadmap, please follow our [engineering updates](https://github.com/cosmos/ibc-go/wiki/Engineering-updates).
 
-🌌🌌🌌🌌 How
+🌌🌌🌌🌌 How does it work?
 =============================
 
 This IBC implementation in Golang is built as a Cosmos SDK module. To understand more about how to use the `ibc-go` module as well as about the IBC protocol, please check out the Interchain Developer Academy [section on IBC](https://tutorials.cosmos.network/academy/3-ibc/), or [our docs](https://ibc.cosmos.network/main/ibc/overview.html).
 
 ## Releases
 
-The release lines currently supported are v2, v3, v4, v5 and v6. 
+The release lines currently supported are v2, v3, v4, v5 and v6.
 
 Please refer to the [Stable Release Policy section of RELEASES.md](https://github.com/cosmos/ibc-go/blob/main/RELEASES.md#stable-release-policy) for more details.
 
@@ -75,22 +91,22 @@ Please refer to our [versioning guide](https://github.com/cosmos/ibc-go/blob/mai
 
 ## Ecosystem
 
-Discover the applications, middleware and light clients developed by other awesome teams in the ecosystem:
+Discover the applications, middleware and light clients developed by other awesome teams in the ecosystem at the new [IBC-apps repo](https://github.com/cosmos/ibc-apps#list-of-apps).
+
+There's even *more* great work which has not yet migrated over to IBC-apps:
 
 In the table below
 `app` refers to IBC application modules for custom use cases and
 `middleware` refers to modules that wrap an IBC application enabling custom logic to be executed.
 
 
-|Description|Repository|Type|
-|----------|----------|----|
-|An application that enables on chain querying of another IBC enabled chain utilizing `baseapp.Query`. Both chains must have implemented the query application and ICA (for queries requiring consensus).|[async-icq](https://github.com/strangelove-ventures/async-icq)|`app`|
-|An application that enables on chain querying of another IBC enabled chains state without the need for the chain being queried to implement the application.|[interchain-queries](https://github.com/ingenuity-build/interchain-queries)|`app`|
-|An application that enables on chain querying of another IBC enabled chains state without the need for the chain being queried to implement the application. Similar to the interchain-queries application in the row above but without callbacks.|[query](https://github.com/defund-labs/defund/tree/main/x/query)|`app`|
-|An application that enables cross chain NFT transfer.|[NFT Transfer (ICS 721)](https://github.com/bianjieai/nft-transfer)|`app`|
-|Middleware enabling a packet to be sent to a destination chain via an intermediate chain, e.g. going from Juno to Osmosis via the Hub.|[packet-forward-middleware](https://github.com/strangelove-ventures/packet-forward-middleware)|`middleware`|
-|Middleware enabling the recovery of tokens sent to unsupported addresses.|[recovery](https://github.com/evmos/evmos/tree/main/x/recovery)|`middleware`|
-|Middleware that limits the in or out flow of an asset in a certain time period to minimise the risks of cross chain token transfers. This is implemented as a middleware wrapping ICS20 with the rate limiting logic implemented by cosmwasm contracts|[ibc-rate-limit](https://github.com/osmosis-labs/osmosis/tree/main/x/ibc-rate-limit)|`middleware`|
+| Description                                                                                                                                                                                                                                            | Repository                                                                           | Type         |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|--------------|
+| An application that enables on chain querying of another IBC enabled chains state without the need for the chain being queried to implement the application.                                                                                           | [interchain-queries](https://github.com/ingenuity-build/interchain-queries)          | `app`        |
+| An application that enables on chain querying of another IBC enabled chains state without the need for the chain being queried to implement the application. Similar to the interchain-queries application in the row above but without callbacks.     | [query](https://github.com/defund-labs/defund/tree/main/x/query)                     | `app`        |
+| An application that enables cross chain NFT transfer.                                                                                                                                                                                                  | [NFT Transfer (ICS 721)](https://github.com/bianjieai/nft-transfer)                  | `app`        |
+| Middleware enabling the recovery of tokens sent to unsupported addresses.                                                                                                                                                                              | [recovery](https://github.com/evmos/evmos/tree/main/x/recovery)                      | `middleware` |
+| Middleware that limits the in or out flow of an asset in a certain time period to minimise the risks of cross chain token transfers. This is implemented as a middleware wrapping ICS20 with the rate limiting logic implemented by cosmwasm contracts | [ibc-rate-limit](https://github.com/osmosis-labs/osmosis/tree/main/x/ibc-rate-limit) | `middleware` |
 
 ## Contributing
 
