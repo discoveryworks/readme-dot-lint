@@ -1,1 +1,0 @@
-cosmos-rust/README.md

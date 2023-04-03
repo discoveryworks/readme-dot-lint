@@ -1,1 +1,0 @@
-cosmos-sdk/README.md

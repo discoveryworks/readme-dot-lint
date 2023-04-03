@@ -1,1 +1,0 @@
-ethermint/README.md

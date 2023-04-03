@@ -20,15 +20,20 @@
 
 <br/>
 
+🌌 Why
+=============================
+
+Serving as the economic center of Cosmos, the Cosmos Hub is a blockchain that provides vital services to the Interchain.
+
 ### 🤔 — Why should you be interested in the Cosmos Hub
 
 ___
 
 The Cosmos Hub is built using the [Cosmos SDK](https://github.com/cosmos/cosmos-sdk) and compiled to a binary called `gaiad` (Gaia Daemon). The Cosmos Hub and other fully sovereign Cosmos SDK blockchains interact with one another using a protocol called [IBC](https://github.com/cosmos/ibc) that enables Inter-Blockchain Communication. In order to understand what the Cosmos Hub is you can read this [introductory explanation](https://hub.cosmos.network/main/hub-overview/overview.html).
 
-|  |  |  |  |  |
-| --- | --- | --- | --- | --- |
-| [![codecov](https://codecov.io/gh/cosmos/gaia/branch/master/graph/badge.svg)](https://codecov.io/gh/cosmos/gaia) | [![Go Report Card](https://goreportcard.com/badge/github.com/cosmos/gaia)](https://goreportcard.com/report/github.com/cosmos/gaia) | [![license](https://img.shields.io/github/license/cosmos/gaia.svg)](https://github.com/cosmos/gaia/blob/main/LICENSE) | [![LoC](https://tokei.rs/b1/github/cosmos/gaia)](https://github.com/cosmos/gaia) | [![GolangCI](https://golangci.com/badges/github.com/cosmos/gaia.svg)](https://golangci.com/r/github.com/cosmos/gaia) |
+|     |     |     |     |     |     |
+| --- | --- | --- | --- | --- | --- |
+| [![codecov](https://codecov.io/gh/cosmos/gaia/branch/master/graph/badge.svg)](https://codecov.io/gh/cosmos/gaia) | [![Go Report Card](https://goreportcard.com/badge/github.com/cosmos/gaia)](https://goreportcard.com/report/github.com/cosmos/gaia) | [![license](https://img.shields.io/github/license/cosmos/gaia.svg)](https://github.com/cosmos/gaia/blob/main/LICENSE) | [![LoC](https://tokei.rs/b1/github/cosmos/gaia)](https://github.com/cosmos/gaia) | [![GolangCI](https://golangci.com/badges/github.com/cosmos/gaia.svg)](https://golangci.com/r/github.com/cosmos/gaia) | ![Conforms to README.lint](https://img.shields.io/badge/README.lint-conforming-brightgreen)
 
 <br/>
 <br/>
@@ -43,6 +48,10 @@ Alternatively, whether you're new to blockchain technology or interested in gett
 
 <br/>
 <br/>
+
+
+🌌🌌 Who
+=============================
 
 ### 👤 — Node Operators
 
@@ -70,6 +79,11 @@ If you still want to participate on the Cosmos Hub, check out becoming a delegat
 <br/>
 <br/>
 
+
+🌌🌌🌌 What
+=============================
+
+The Cosmos Hub is the first of [thousands of interconnected blockchains (opens new window)](https://cosmos.network) that will eventually comprise the **Cosmos Network**. The primary token of the Cosmos Hub is the **ATOM**, but the Hub will support many tokens in the future.
 ### 👥 — Testnet
 
 ___
@@ -88,6 +102,23 @@ For an overview of upcoming changes to the Cosmos Hub take a look at the [Roadma
 <br/>
 <br/>
 
+
+🌌🌌🌌🌌 How
+=============================
+
+### 🤝 — How to contribute
+
+___
+
+Check out [contributing.md](CONTRIBUTING.md) for our guidelines & policies for how we develop the Cosmos Hub. Thank you to all those who have contributed!
+
+<br/>
+<br/>
+
+
+🌌🌌🌌🌌🌌 Other
+=============================
+
 ### 🗄️ — Archives & Genesis
 
 ___
@@ -96,15 +127,6 @@ With each version of the Cosmos Hub, the chain is restarted from a new Genesis s
 Mainnet is currently running as `cosmoshub-4`. Archives of the state of `cosmoshub-1`, `cosmoshub-2`, and `cosmoshub-3` are available [here](./docs/resources/archives.md).
 
 If you are looking for historical genesis files and other data [`cosmos/mainnet`](http://github.com/cosmos/mainnet) is an excellent resource. Snapshots are also available at [cosmos.quicksync.io](https://cosmos.quicksync.io).
-
-<br/>
-<br/>
-
-### 🤝 — How to contribute
-
-___
-
-Check out [contributing.md](CONTRIBUTING.md) for our guidelines & policies for how we develop the Cosmos Hub. Thank you to all those who have contributed!
 
 <br/>
 <br/>
