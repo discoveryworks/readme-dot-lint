@@ -8,7 +8,7 @@
 =============================
 - *We believe that new folks* trying to understand / contribute to the Cosmos ecosystem
 - *Have a harder time than they need to* because it can be hard to quickly grok a project
-- *And we could address that at low cost by* creating a template for Cosmos OSS projects to encourage consistency and completeness of product and technical vision, and to better socialize those goals.
+- *And we could address that at low cost by* creating a template for Cosmos OSS projects **to encourage consistency and completeness of product and technical vision**, and to better socialize those goals.
 
 
 🌌🌌 Who benefits from it?
