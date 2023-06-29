@@ -21,7 +21,7 @@ It can also help repo authors talk through and memorialize big questions like "W
 🌌🌌🌌 What does it do?
 =============================
 
-In the spirit of [Convention Over Configuration](https://en.wikipedia.org/wiki/Convention_over_configuration), README.lint is a sane default template for a readme. The hope is that users will be able to more easily ramp up on new repos if they know what to expect in the documentation—and that the template can incline authors towards making explicit a core set of concerns, namely:
+In the spirit of [Convention Over Configuration](https://en.wikipedia.org/wiki/Convention_over_configuration), **README.lint is a sane default template for a readme**. The hope is that users will be able to more easily ramp up on new repos if they know what to expect in the documentation—and that the template can incline authors towards making explicit a core set of concerns, namely:
 - "Why did we see the need to spend time and energy building this?",
 - "Who is this repo for?",
 - "What, exactly, is this thing?"
