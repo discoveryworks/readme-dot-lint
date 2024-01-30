@@ -31,7 +31,7 @@ In the spirit of [Convention Over Configuration](https://en.wikipedia.org/wiki/C
 🌌🌌🌌🌌 How do I use it?
 =============================
 
-1. Audit existing repos and, without changing anything other than position, organizing the repos into following sections:
+Audit existing repos and, without changing anything other than position, organizing the repos into following sections:
 
 ```
 🌌 Why use ${REPO_NAME}?
@@ -66,10 +66,11 @@ Most people use the markdown `#` syntax for H1s. By using the less common, visua
 
 ---
 
-### Proposed process
+### Process
 
-1. submit PRs to any repos which we think would benefit and start a conversation with the authors
-2. ...one day, maybe try upgrade this into an actual automated linter. For now, humans do the work.
+1. Submit PRs to any repos which we think would benefit and start a conversation with the authors
+2. add the PR to the [list of README's which have been linted](#linted-readmes)
+3. ...one day, maybe try upgrade this into an actual automated linter. For now, humans do the work.
 
 ## Badges
 
@@ -105,3 +106,7 @@ Non-Conforming:
   </a>
 
 ```
+
+## Linted Readmes
+
+- [Cosmos Operator](https://github.com/strangelove-ventures/cosmos-operator/pull/406)
