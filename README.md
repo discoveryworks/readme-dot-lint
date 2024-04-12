@@ -57,56 +57,72 @@ Audit existing repos and, without changing anything other than position, organiz
 🌌🌌🌌🌌🌌 Extras
 =============================
 
-### What's `Extras` for?
+## What's `Extras` for?
 This can be a place for anything that doesn't fit into the {Why, Who, What, How} categories. The idea is to make it really easy to backport existing repos into README.lint, so "Extras" makes for easier adaptation.
 
-### Why do we use the `===` markdown syntax for h1s?
+---
 
+## Emoji in README.lint
+
+We use Emoji to help our visually-oriented mammal brains distinguish the canonical `README.lint` sections. We started out with `:milky_way`, but README.lint ought not be cosmos-specific and so `🌌` is a probably a poor choice; let's migrate to `🌸` (`:cherry_blossom`).
+
+In thinking about it, the key principles seem to be:
+
+- by Convention, README.lint has a sane, semantically-neutral default emoji: 🌸
+- but if a project wants to Configure the emoji to it's own taste, the "rules" are
+   1. stick w/ one emoji, don't mix-n-match
+   2. stay consistent w/ the headers (e.g. "H1" is `Why`, H2 must always be `Who...` etc.)
+
+
+---
+
+## Why do we use the `===` markdown syntax for h1s?
 Most people use the markdown `#` syntax for H1s. By using the less common, visually more distinctive `===` syntax, we'll often have an easier time distinguishing the meta (README.lint H1s) from the main content (H1s from the imported repo.)
 
 ---
 
-### Process
-
+## Process for implementing README.lint in other repos
 1. Submit PRs to any repos which we think would benefit and start a conversation with the authors
 2. add the PR to the [list of README's which have been linted](#linted-readmes)
 3. ...one day, maybe try upgrade this into an actual automated linter. For now, humans do the work.
 
-## Badges
+---
 
+## Badges
 In order to 1) spread the word, and 2) imply that this exercise is on par with other efforts to ensure consistency and standards across software, we made a badge!
 
 
 [![Conforms to README.lint](https://img.shields.io/badge/README.lint-conforming-brightgreen)](https://github.com/strangelove-ventures/readme-dot-lint)
 [![Does not conform to README.lint](https://img.shields.io/badge/README.lint-non--conforming-red)](https://github.com/strangelove-ventures/readme-dot-lint)
 
-### Markdown
+### Badge snippet (Markdown)
+#### Conforming:
 ```
-Conforming:
-
-   [![Conforms to README.lint](https://img.shields.io/badge/README.lint-conforming-brightgreen)](https://github.com/strangelove-ventures/readme-dot-lint)
-
-Non-Conforming:
-
-   [![Does not conform to README.lint](https://img.shields.io/badge/README.lint-non--conforming-red)](https://github.com/strangelove-ventures/readme-dot-lint)
+[![Conforms to README.lint](https://img.shields.io/badge/README.lint-conforming-brightgreen)](https://github.com/strangelove-ventures/readme-dot-lint)
 ```
 
-### Html
+#### Non-Conforming:
 ```
-Conforming:
-
-  <a href="https://github.com/strangelove-ventures/readme-dot-lint">
-    <img alt="Conforms to README.lint" src="https://img.shields.io/badge/README.lint-conforming-brightgreen" />
-  </a>
-
-Non-Conforming:
-
-  <a href="https://github.com/strangelove-ventures/readme-dot-lint">
-    <img alt="Does not conform to README.lint" src="https://img.shields.io/badge/README.lint-non--conforming-red" />
-  </a>
-
+[![Does not conform to README.lint](https://img.shields.io/badge/README.lint-non--conforming-red)](https://github.com/strangelove-ventures/readme-dot-lint)
 ```
 
-## Linted Readmes
+### Badge snippet (HTML)
+#### Conforming:
+```
+<a href="https://github.com/strangelove-ventures/readme-dot-lint">
+  <img alt="Conforms to README.lint" src="https://img.shields.io/badge/README.lint-conforming-brightgreen" />
+</a>
+```
+#### Non-Conforming:
+```
+<a href="https://github.com/strangelove-ventures/readme-dot-lint">
+  <img alt="Does not conform to README.lint" src="https://img.shields.io/badge/README.lint-non--conforming-red" />
+</a>
+
+```
+
+---
+
+## List of Linted Readmes
 
 - [Cosmos Operator](https://github.com/strangelove-ventures/cosmos-operator/pull/406)

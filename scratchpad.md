@@ -272,14 +272,13 @@ Because...
 ### HMW represent "Why", "Who", "What" etc... as concepts? Or a class of questions or attributes?
 #### 🌸 flowers are nice
 
+Because...
 ```
 # 🌸 Why use ${REPO_NAME}?
-Because...
-
 # 🌸🌸 Who ${BENEFITS FROM THIS REPO}
 # 🌸🌸🌸 What ${EXACTLY DOES THIS DO?}
 # 🌸🌸🌸🌸 How ${DO I USE IT? HOW DOES IT WORK?}
-# 🌸🌸🌸🌸🌸 Other
+# 🌸🌸🌸🌸🌸 Extras
 ```
 ---
 
