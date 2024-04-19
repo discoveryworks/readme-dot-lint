@@ -126,3 +126,4 @@ In order to 1) spread the word, and 2) imply that this exercise is on par with o
 ## List of Linted Readmes
 
 - [Cosmos Operator](https://github.com/strangelove-ventures/cosmos-operator/pull/406)
+- [Horcrux](https://github.com/strangelove-ventures/horcrux/pull/268)
