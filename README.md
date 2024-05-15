@@ -79,6 +79,9 @@ In thinking about it, the key principles seem to be:
 ## Why do we use the `===` markdown syntax for h1s?
 Most people use the markdown `#` syntax for H1s. By using the less common, visually more distinctive `===` syntax, we'll often have an easier time distinguishing the meta (README.lint H1s) from the main content (H1s from the imported repo.)
 
+### But now we've got multiple `H1`s, which `markdownlint` dislikes.
+That sounds like a `markdownlint` problem, not an "us" problem. Multiple H1s have been valid since HTML5 was introduced in 2014. Get with the times, man.
+
 ---
 
 ## Process for implementing README.lint in other repos
