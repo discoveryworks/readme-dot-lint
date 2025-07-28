@@ -1,3 +1,4 @@
+
 ## A Plan (v2)
 
 ## Strangelove projects for which we can lint README's
@@ -392,7 +393,7 @@ Guests
 
 ## To move to ibc-apps
 
-| Description                                                                                                                                                                                                                                            | Repository                                                                                     | Type         |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|--------------|
-| An application that enables on chain querying of another IBC enabled chain utilizing `baseapp.Query`. Both chains must have implemented the query application and ICA (for queries requiring consensus).                                               | [async-icq](https://github.com/strangelove-ventures/async-icq)                                 | `app`        |
-| Middleware enabling a packet to be sent to a destination chain via an intermediate chain, e.g. going from Juno to Osmosis via the Hub.                                                                                                                 | [packet-forward-middleware](https://github.com/strangelove-ventures/packet-forward-middleware) | `middleware` |
+| Description                                                                                                                                                                                              | Repository                                                                                     | Type         |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|--------------|
+| An application that enables on chain querying of another IBC enabled chain utilizing `baseapp.Query`. Both chains must have implemented the query application and ICA (for queries requiring consensus). | [async-icq](https://github.com/strangelove-ventures/async-icq)                                 | `app`        |
+| Middleware enabling a packet to be sent to a destination chain via an intermediate chain, e.g. going from Juno to Osmosis via the Hub.                                                                   | [packet-forward-middleware](https://github.com/strangelove-ventures/packet-forward-middleware) | `middleware` |
