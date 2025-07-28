@@ -1,0 +1,25 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+
+## Testing Approach
+- Default to Outside-in design: write a BDD feature test, make it pass line-by-line
+- When a line fails, write a failing unit/view/controller/integration test as appropriate
+- Practice red-green-refactor methodology (ie, write a failing test, make it pass, refactor as needed)
+- Maintain a reasonable Testing Pyramid (more unit tests, fewer feature tests)
+- Implement visual regression testing if applicable
+- **Never commit code when the test test suite are failing ("red")** - always get the build green before committing
+
+### Behavior-Driven Development ("BDD")
+- always construe Features (aka "Feature Stories", "User Stories", "Stories") from the perspective of a User (rather than splitting along, e.g. functional lines; a "frontend feature" which is useless until a corresponding "backend feature" is built).
+- A Feature can be thought of as "the least amount of work with user-facing value"
+- If you think a feature could be simpler or more minimal, ask for clarification
+
+### Outside-in testing
+- write a failing cucumber (or other BDD) feature test
+- when a line fails, write the appropriate failing {unit, controller, integration, view, etc.} Rspec (or other non-BDD test) test 
+- write the feature code until the Rspec passes
+- run the cucumber again; that line should pass (or might need more non-BDD tests)
+- repeat until tests are green

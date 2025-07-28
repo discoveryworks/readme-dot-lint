@@ -1,0 +1,41 @@
+---
+description: Guidance for following Rails' Convention over Configuration principle
+globs: "app/**/*.{rb,erb,haml,js}"
+alwaysApply: false
+---
+# Convention Over Configuration
+
+## Core Philosophy
+- Follow established Rails conventions unless there's a compelling reason not to
+- Take full advantage of Rails' built-in assumptions and defaults
+- Use conventional naming patterns for clarity and consistency
+- Embrace "The Rails Way" - favor convention over custom solutions
+- Minimize configuration files and custom setups
+
+## Code Organization
+- Follow standard Rails directory structure and naming conventions
+- Use RESTful resource routing by default
+- Adhere to ActiveRecord naming conventions for models and database tables
+- Keep controllers thin and models fat (business logic belongs in models)
+- Use conventional service objects for complex operations 
+- Place concerns in the appropriate `app/models/concerns` or `app/controllers/concerns` directories
+
+## Naming Patterns
+- Use plural for controllers, routes, and tables
+- Use singular for models, helpers, and mailers
+- Follow standard inflection rules (person/people, category/categories)
+- Use conventional file naming (snake_case for files, CamelCase for classes)
+- Use conventional method naming (snake_case for methods, ? suffix for boolean methods)
+
+## Generators & Scaffolds
+- Use Rails generators and scaffolds to create conventional structure
+- Embrace the generated files as examples of best practices
+- Modify generated files only when necessary, maintaining conventions
+- Use flags with generators to customize output (e.g., `--skip-test-unit`)
+
+## When to Break Convention
+- Only deviate from conventions when there's clear benefit
+- Document any intentional departures from convention
+- Evaluate if a gem or plugin exists that follows Rails conventions before custom code
+- When breaking convention, be consistent with your alternative approach
+- Consider future maintainers who will expect conventional patterns
