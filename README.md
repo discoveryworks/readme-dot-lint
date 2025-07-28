@@ -1,6 +1,6 @@
 # README.lint
 
-[![Conforms to README.lint](https://img.shields.io/badge/README.lint-conforming-brightgreen)](https://github.com/strangelove-ventures/readme-dot-lint)
+[![Conforms to README.lint](https://img.shields.io/badge/README.lint-conforming-brightgreen)](https://github.com/discoveryworks/readme-dot-lint)
 
 
 
@@ -125,30 +125,30 @@ Note: This documentation is preserved here while the repository is currently ret
 In order to 1) spread the word, and 2) imply that this exercise is on par with other efforts to ensure consistency and standards across software, we made a badge!
 
 
-[![Conforms to README.lint](https://img.shields.io/badge/README.lint-conforming-brightgreen)](https://github.com/strangelove-ventures/readme-dot-lint)
-[![Does not conform to README.lint](https://img.shields.io/badge/README.lint-non--conforming-red)](https://github.com/strangelove-ventures/readme-dot-lint)
+[![Conforms to README.lint](https://img.shields.io/badge/README.lint-conforming-brightgreen)](https://github.com/discoveryworks/readme-dot-lint)
+[![Does not conform to README.lint](https://img.shields.io/badge/README.lint-non--conforming-red)](https://github.com/discoveryworks/readme-dot-lint)
 
 ### Badge snippet (Markdown)
 #### Conforming:
 ```
-[![Conforms to README.lint](https://img.shields.io/badge/README.lint-conforming-brightgreen)](https://github.com/strangelove-ventures/readme-dot-lint)
+[![Conforms to README.lint](https://img.shields.io/badge/README.lint-conforming-brightgreen)](https://github.com/discoveryworks/readme-dot-lint)
 ```
 
 #### Non-Conforming:
 ```
-[![Does not conform to README.lint](https://img.shields.io/badge/README.lint-non--conforming-red)](https://github.com/strangelove-ventures/readme-dot-lint)
+[![Does not conform to README.lint](https://img.shields.io/badge/README.lint-non--conforming-red)](https://github.com/discoveryworks/readme-dot-lint)
 ```
 
 ### Badge snippet (HTML)
 #### Conforming:
 ```
-<a href="https://github.com/strangelove-ventures/readme-dot-lint">
+<a href="https://github.com/discoveryworks/readme-dot-lint">
   <img alt="Conforms to README.lint" src="https://img.shields.io/badge/README.lint-conforming-brightgreen" />
 </a>
 ```
 #### Non-Conforming:
 ```
-<a href="https://github.com/strangelove-ventures/readme-dot-lint">
+<a href="https://github.com/discoveryworks/readme-dot-lint">
   <img alt="Does not conform to README.lint" src="https://img.shields.io/badge/README.lint-non--conforming-red" />
 </a>
 
@@ -160,3 +160,16 @@ In order to 1) spread the word, and 2) imply that this exercise is on par with o
 
 - [Cosmos Operator](https://github.com/strangelove-ventures/cosmos-operator/pull/406)
 - [Horcrux](https://github.com/strangelove-ventures/horcrux/pull/268)
+
+---
+
+## Acknowledgements
+
+README.lint was originally developed at [Strangelove Ventures](https://github.com/strangelove-ventures) as part of our effort to improve developer experience across the Cosmos ecosystem. Special thanks to:
+
+- **Strangelove Ventures** for supporting this work and allowing it to be open-sourced
+- **Susannah** for pairing sessions that shaped key design decisions (especially the question-based section names)
+- **Dan K** for collaboration on making the README conform to its own standard
+- **The Cosmos community** for providing the ecosystem complexity that inspired this solution
+
+This project represents the "laziness is a virtue" philosophy - work smarter, not harder - applied to documentation standards.
