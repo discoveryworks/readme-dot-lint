@@ -77,7 +77,37 @@ In thinking about it, the key principles seem to be:
 ---
 
 ## Why do we use the `===` markdown syntax for h1s?
-Most people use the markdown `#` [ATX syntax](https://spec.commonmark.org/0.31.2/#atx-headings) for H1s. By using the less common, visually more distinctive `===` [setext syntax](https://spec.commonmark.org/0.31.2/#setext-headings), we'll often have an easier time distinguishing the meta (README.lint H1s) from the main content (H1s from the imported repo.)
+Because it's weird.
+
+Fine, "less common". It helps to disambiguate the readme-dot-lint meta format (setext) from the readme's actual subject matter (often atx).
+
+Most people use the markdown [ATX syntax](https://spec.commonmark.org/0.31.2/#atx-headings) for H1s.
+
+```markdown
+# Foo Bar Baz (atx)
+
+ATX syntax uses a single octothorpe "#" for an h1, two "##" for an h2 etc.
+```
+
+By using the less common, visually more distinctive [setext syntax](https://spec.commonmark.org/0.31.2/#setext-headings),
+
+```markdown
+Foo Bar Baz (setext)
+====================
+
+Setext gives a heavy underline to h1s
+by drawing equal signs "===="
+underneath the headline text
+
+It also allows h2s
+------------------
+
+using a lighter underline
+drawn with hyphens "----"
+
+```
+
+we'll often have an easier time distinguishing the meta (README.lint H1s) from the main content (H1s from the imported repo.)
 
 ### But now we've got multiple `H1`s, which `markdownlint` dislikes.
 That sounds like a `markdownlint` problem, not an "us" problem. Multiple H1s have been valid since HTML5 was introduced in 2014. Get with the times, man.
