@@ -198,8 +198,6 @@ In order to 1) spread the word, and 2) imply that this exercise is on par with o
 README.lint was originally developed at [Strangelove Ventures](https://github.com/strangelove-ventures) as part of our effort to improve developer experience across the Cosmos ecosystem. Special thanks to:
 
 - **Strangelove Ventures** for supporting this work and allowing it to be open-sourced
-- **Susannah** for pairing sessions that shaped key design decisions (especially the question-based section names)
-- **Dan K** for collaboration on making the README conform to its own standard
+- **[Sean](https://github.com/beckettsean)** for a ton of the ideas and practice and validation that led to building this thing
+- **[Susannah](https://github.com/womensrights)** for pairing sessions that shaped key design decisions (especially the question-based section names)
 - **The Cosmos community** for providing the ecosystem complexity that inspired this solution
-
-This project represents the "laziness is a virtue" philosophy - work smarter, not harder - applied to documentation standards.
