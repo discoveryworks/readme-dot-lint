@@ -198,6 +198,23 @@ In order to 1) spread the word, and 2) imply that this exercise is on par with o
 
 ---
 
+## Is anything sneaky happening here?
+
+Yes!
+
+Based on our research (and anecdata, and common sense), most READMEs do a decent job of covering the "**What**" and the "**How**".
+
+It's _far_ less common for READMEs to mention the "**Who**" or the "**Why**"...yet every project, necessarily, must be _for_ someone(s).  Necessarily, there _must_ be a reason why a community is spending {time, energy, resources} on it.
+
+These are 1) critically important, 2) often go unspoken, and 3) we believe lot of open source project or community conflict would be ameliorated if the "_Who_" and "_Why_" were made more explicit. But for whatever reason, we tend not to think to write this stuff down.
+
+So, the sneakiness: by explicitly drawing "**Why?**" and "**Who?**" into the README.lint format, we hope to drive out these conversations, surface conflicts and ambiguities (e.g. among core teams or committers), and memorialize evolutions to that thinking.
+
+You're welcome! :-)
+
+
+---
+
 ## Acknowledgements
 
 README.lint was originally developed at [Strangelove Ventures](https://github.com/strangelove-ventures) as part of our effort to improve developer experience across the Cosmos ecosystem. Special thanks to:
