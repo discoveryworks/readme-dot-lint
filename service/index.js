@@ -382,11 +382,14 @@ app.get('/api/lint', async (req, res) => {
   }
 
   try {
+    // Clean the URL by removing query parameters and anchors
+    const cleanUrl = repo_url.split('?')[0].split('#')[0];
+    
     // Parse GitHub URL - handle multiple formats
-    let match = repo_url.match(/github\.com\/([^/]+)\/([^/]+)(?:\/(?:blob\/[^/]+\/)?README\.md|\/|$)/);
+    let match = cleanUrl.match(/github\.com\/([^/]+)\/([^/]+)(?:\/(?:blob\/[^/]+\/)?README\.md|\/|$)/);
     if (!match) {
       // Try alternative formats
-      match = repo_url.match(/github\.com\/([^/]+)\/([^/]+)/);
+      match = cleanUrl.match(/github\.com\/([^/]+)\/([^/]+)/);
     }
     if (!match) {
       return res.status(400).json({ error: 'Invalid GitHub URL format' });
@@ -413,9 +416,12 @@ app.get('/health', (req, res) => {
   res.json({ status: 'OK', service: 'readme-lint-service' });
 });
 
-app.listen(PORT, () => {
-  console.log(`README.lint service running on port ${PORT}`);
-  console.log(`Try: http://localhost:${PORT}/cosmos/cosmos-sdk/README.md`);
-});
+// Only start server if this is the main module (not imported for testing)
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`README.lint service running on port ${PORT}`);
+    console.log(`Try: http://localhost:${PORT}/cosmos/cosmos-sdk/README.md`);
+  });
+}
 
 module.exports = app;
