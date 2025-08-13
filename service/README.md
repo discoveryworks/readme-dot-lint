@@ -36,14 +36,14 @@ npm start
 ## Usage
 
 ### Direct URL access
-Visit: `http://localhost:3000/{owner}/{repo}/README.md`
+Visit: `http://localhost:3515/{owner}/{repo}/README.md`
 
-Example: `http://localhost:3000/cosmos/cosmos-sdk/README.md`
+Example: `http://localhost:3515/cosmos/cosmos-sdk/README.md`
 
 ### API access
 GET `/api/lint?repo_url=https://github.com/owner/repo`
 
-Returns: `{ "linted_url": "http://localhost:3000/owner/repo/README.md" }`
+Returns: `{ "linted_url": "http://localhost:3515/owner/repo/README.md" }`
 
 🌸🌸🌸🌸🌸 Extras
 =============================
