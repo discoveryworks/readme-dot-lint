@@ -17,57 +17,57 @@ To demonstrate the README.lint service with real, popular open-source repositori
 
 ## JavaScript/TypeScript Projects
 
-### [React](http://localhost:3001/facebook/react/README.md)
+### [React](http://localhost:3515/facebook/react/README.md)
 - **Original**: https://github.com/facebook/react
-- **Linted**: http://localhost:3001/facebook/react/README.md
+- **Linted**: http://localhost:3515/facebook/react/README.md
 - **Why notable**: Extremely popular frontend library with comprehensive docs
 
-### [Node.js](http://localhost:3001/nodejs/node/README.md) 
+### [Node.js](http://localhost:3515/nodejs/node/README.md) 
 - **Original**: https://github.com/nodejs/node
-- **Linted**: http://localhost:3001/nodejs/node/README.md
+- **Linted**: http://localhost:3515/nodejs/node/README.md
 - **Why notable**: Core JavaScript runtime with technical documentation
 
-### [VS Code](http://localhost:3001/microsoft/vscode/README.md)
+### [VS Code](http://localhost:3515/microsoft/vscode/README.md)
 - **Original**: https://github.com/microsoft/vscode
-- **Linted**: http://localhost:3001/microsoft/vscode/README.md
+- **Linted**: http://localhost:3515/microsoft/vscode/README.md
 - **Why notable**: Popular editor with detailed setup instructions
 
 ## Blockchain/Cosmos Ecosystem
 
-### [Cosmos SDK](http://localhost:3001/cosmos/cosmos-sdk/README.md)
+### [Cosmos SDK](http://localhost:3515/cosmos/cosmos-sdk/README.md)
 - **Original**: https://github.com/cosmos/cosmos-sdk
-- **Linted**: http://localhost:3001/cosmos/cosmos-sdk/README.md
+- **Linted**: http://localhost:3515/cosmos/cosmos-sdk/README.md
 - **Why notable**: Core blockchain framework, original inspiration for README.lint
 
 ## Python Projects
 
-### [Django](http://localhost:3001/django/django/README.md)
+### [Django](http://localhost:3515/django/django/README.md)
 - **Original**: https://github.com/django/django
-- **Linted**: http://localhost:3001/django/django/README.md
+- **Linted**: http://localhost:3515/django/django/README.md
 - **Why notable**: Major web framework with established documentation patterns
 
-### [Requests](http://localhost:3001/psf/requests/README.md)
+### [Requests](http://localhost:3515/psf/requests/README.md)
 - **Original**: https://github.com/psf/requests
-- **Linted**: http://localhost:3001/psf/requests/README.md
+- **Linted**: http://localhost:3515/psf/requests/README.md
 - **Why notable**: Simple, elegant library with clear user-focused docs
 
 ## Go Projects
 
-### [Kubernetes](http://localhost:3001/kubernetes/kubernetes/README.md)
+### [Kubernetes](http://localhost:3515/kubernetes/kubernetes/README.md)
 - **Original**: https://github.com/kubernetes/kubernetes
-- **Linted**: http://localhost:3001/kubernetes/kubernetes/README.md
+- **Linted**: http://localhost:3515/kubernetes/kubernetes/README.md
 - **Why notable**: Complex infrastructure project with developer onboarding focus
 
-### [Docker](http://localhost:3001/moby/moby/README.md)
+### [Docker](http://localhost:3515/moby/moby/README.md)
 - **Original**: https://github.com/moby/moby
-- **Linted**: http://localhost:3001/moby/moby/README.md
+- **Linted**: http://localhost:3515/moby/moby/README.md
 - **Why notable**: Container platform with technical but accessible documentation
 
 ## Already Conformant Examples
 
-### [README.lint](http://localhost:3001/discoveryworks/readme-dot-lint/README.md)
+### [README.lint](http://localhost:3515/discoveryworks/readme-dot-lint/README.md)
 - **Original**: https://github.com/discoveryworks/readme-dot-lint
-- **Linted**: http://localhost:3001/discoveryworks/readme-dot-lint/README.md
+- **Linted**: http://localhost:3515/discoveryworks/readme-dot-lint/README.md
 - **Why notable**: Returns original content - demonstrates conformance detection
 
 🌸🌸🌸🌸 How to use these examples?
@@ -83,15 +83,15 @@ To demonstrate the README.lint service with real, popular open-source repositori
 
 ```bash
 # Get linted URL for any repo
-curl "http://localhost:3001/api/lint?repo_url=https://github.com/facebook/react"
+curl "http://localhost:3515/api/lint?repo_url=https://github.com/facebook/react"
 
-# Returns: {"linted_url":"http://localhost:3001/facebook/react/README.md","repo":"facebook/react"}
+# Returns: {"linted_url":"http://localhost:3515/facebook/react/README.md","repo":"facebook/react"}
 ```
 
 ## Adding New Examples
 
 The service works with any public GitHub repository:
-- Format: `http://localhost:3001/{owner}/{repo}/README.md`
+- Format: `http://localhost:3515/{owner}/{repo}/README.md`
 - API format: `/api/lint?repo_url=https://github.com/{owner}/{repo}`
 
 ## What to Look For
