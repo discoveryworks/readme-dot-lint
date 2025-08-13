@@ -53,7 +53,41 @@ class ReadmeLinter {
     };
   }
 
+  isReadmeLintConformant(content) {
+    // Check for README.lint conformance markers
+    const conformanceMarkers = [
+      /🌸 Why use .+\?\s*\n={20,}/,
+      /🌸🌸 Who .+\s*\n={20,}/,
+      /🌸🌸🌸 What .+\?\s*\n={20,}/,
+      /🌸🌸🌸🌸 How .+\?\s*\n={20,}/,
+      /🌸🌸🌸🌸🌸 Extras\s*\n={20,}/
+    ];
+
+    // Also check for alternative emoji patterns (🌌, etc.)
+    const altEmojiMarkers = [
+      /🌌 Why .+\?\s*\n={20,}/,
+      /🌌🌌 Who .+\s*\n={20,}/,
+      /🌌🌌🌌 What .+\?\s*\n={20,}/,
+      /🌌🌌🌌🌌 How .+\?\s*\n={20,}/,
+      /🌌🌌🌌🌌🌌 Extras\s*\n={20,}/
+    ];
+
+    // Check if it has the conformance badge
+    const hasBadge = content.includes('README.lint-conforming') || content.includes('README.lint');
+
+    // Check if it has at least 3 of the 5 main sections (Why, Who, What are most important)
+    const conformantSections = conformanceMarkers.filter(marker => marker.test(content)).length;
+    const altSections = altEmojiMarkers.filter(marker => marker.test(content)).length;
+
+    return (conformantSections >= 3 || altSections >= 3) && hasBadge;
+  }
+
   transformToReadmeLint(content, owner, repo) {
+    // Check if already conformant - if so, return original
+    if (this.isReadmeLintConformant(content)) {
+      return content;
+    }
+
     const info = this.extractRepoInfo(content, owner, repo);
     let linted = '';
 
