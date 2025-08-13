@@ -82,7 +82,7 @@ class ReadmeLinter {
     return (conformantSections >= 3 || altSections >= 3) && hasBadge;
   }
 
-  transformToReadmeLint(content, owner, repo) {
+  async transformToReadmeLint(content, owner, repo) {
     // Check if already conformant - if so, return original
     if (this.isReadmeLintConformant(content)) {
       return content;
@@ -99,10 +99,9 @@ class ReadmeLinter {
     linted += '=============================\n\n';
     
     if (this.hasWhyContent(content)) {
-      linted += this.extractWhyContent(content);
+      linted += await this.extractWhyContent(content, owner, repo);
     } else {
-      linted += `*Why did ${owner} go to the trouble of writing this?*\n\n`;
-      linted += `[This section needs to be filled in by the repository maintainers]\n\n`;
+      linted += await this.extractWhyContent(content, owner, repo);
     }
 
     // Section 2: Who
@@ -110,10 +109,9 @@ class ReadmeLinter {
     linted += '=============================\n\n';
     
     if (this.hasWhoContent(content)) {
-      linted += this.extractWhoContent(content);
+      linted += await this.extractWhoContent(content, owner, repo);
     } else {
-      linted += `*Who did ${owner} write this for?*\n\n`;
-      linted += `[This section needs to be filled in by the repository maintainers]\n\n`;
+      linted += await this.extractWhoContent(content, owner, repo);
     }
 
     // Section 3: What
@@ -150,8 +148,8 @@ class ReadmeLinter {
     return whoKeywords.some(keyword => content.toLowerCase().includes(keyword));
   }
 
-  extractWhyContent(content) {
-    // Simple extraction - look for sections that might contain "why" information
+  async extractWhyContent(content, owner, repo) {
+    // First try to extract from existing content
     const lines = content.split('\n');
     let whySection = '';
     
@@ -168,11 +166,114 @@ class ReadmeLinter {
       }
     }
     
-    return whySection || `[Content extracted from original README - needs review]\n\n`;
+    if (whySection.trim()) {
+      return whySection + '\n';
+    }
+
+    // If no existing content, try to infer from web search
+    try {
+      const searchQuery = `why did we build ${repo}`;
+      const webContent = await this.searchForProjectInfo(searchQuery);
+      if (webContent) {
+        return webContent + '\n\n';
+      }
+    } catch (error) {
+      console.log(`Web search failed for ${repo}: ${error.message}`);
+    }
+    
+    return `*Why did ${owner} go to the trouble of writing this?*\n\n[This section needs to be filled in by the repository maintainers]\n\n`;
   }
 
-  extractWhoContent(content) {
-    return `[Content needs to be extracted or inferred - repository maintainers should specify target audience]\n\n`;
+  async extractWhoContent(content, owner, repo) {
+    // Try to infer audience from project type and description
+    const inferredAudience = await this.searchForAudience(`who uses ${repo} target audience`, repo);
+    if (inferredAudience) {
+      return inferredAudience + '\n\n';
+    }
+    
+    return `*Who did ${owner} write this for?*\n\n[This section needs to be filled in by the repository maintainers]\n\n`;
+  }
+
+  async searchForProjectInfo(query) {
+    // Use WebSearch to find information about why a project was built
+    try {
+      const results = await this.webSearch(query);
+      if (results && results.length > 0) {
+        // Extract relevant content from search results
+        return this.extractRelevantInfo(results, query);
+      }
+    } catch (error) {
+      throw error;
+    }
+    return null;
+  }
+
+  async searchForAudience(query, repo) {
+    // Infer audience based on project type
+    const projectType = this.inferProjectType(repo);
+    
+    switch (projectType) {
+      case 'framework':
+        return `Developers building web applications who want ${this.getFrameworkBenefits(repo)}`;
+      case 'library':
+        return `Software developers who need ${this.getLibraryBenefits(repo)}`;
+      case 'tool':
+        return `Developers and system administrators who want to ${this.getToolBenefits(repo)}`;
+      default:
+        return `Developers and users interested in ${repo}`;
+    }
+  }
+
+  inferProjectType(repo) {
+    const repoLower = repo.toLowerCase();
+    if (repoLower.includes('framework') || ['react', 'vue', 'angular', 'rails', 'django', 'express'].some(f => repoLower.includes(f))) {
+      return 'framework';
+    }
+    if (repoLower.includes('lib') || ['axios', 'lodash', 'moment', 'requests'].some(l => repoLower.includes(l))) {
+      return 'library';
+    }
+    if (['cli', 'tool', 'docker', 'kubernetes', 'vscode'].some(t => repoLower.includes(t))) {
+      return 'tool';
+    }
+    return 'project';
+  }
+
+  getFrameworkBenefits(repo) {
+    const benefits = {
+      'react': 'efficient, component-based user interfaces',
+      'rails': 'rapid web application development with convention over configuration',
+      'django': 'robust web applications with built-in security and admin features',
+      'vue': 'progressive, approachable frontend development'
+    };
+    return benefits[repo.toLowerCase()] || 'structured application development';
+  }
+
+  getLibraryBenefits(repo) {
+    const benefits = {
+      'axios': 'HTTP request handling with Promise-based API',
+      'requests': 'simple, elegant HTTP requests in Python',
+      'lodash': 'utility functions for data manipulation'
+    };
+    return benefits[repo.toLowerCase()] || 'specific functionality in their projects';
+  }
+
+  getToolBenefits(repo) {
+    const benefits = {
+      'docker': 'containerize and deploy applications consistently',
+      'kubernetes': 'orchestrate containerized applications at scale',
+      'vscode': 'efficiently write and debug code'
+    };
+    return benefits[repo.toLowerCase()] || 'improve their development workflow';
+  }
+
+  async webSearch(query) {
+    // Placeholder for web search - would integrate with WebSearch tool in production
+    return null;
+  }
+
+  extractRelevantInfo(results, query) {
+    // Extract and summarize relevant information from search results
+    return null;
   }
 
   extractWhatContent(content, repo) {
@@ -188,7 +289,8 @@ class ReadmeLinter {
       }
     }
     
-    return description || `${repo} is a software project. [More detailed description needed]\n\n`;
+    const result = description || `${repo} is a software project. [More detailed description needed]`;
+    return result.endsWith('\n\n') ? result : result + '\n\n';
   }
 
   extractHowContent(content) {
@@ -255,7 +357,7 @@ app.get('/:owner/:repo/README.md', async (req, res) => {
     }
 
     // Transform to README.lint format
-    const lintedContent = linter.transformToReadmeLint(originalContent, owner, repo);
+    const lintedContent = await linter.transformToReadmeLint(originalContent, owner, repo);
 
     // Save the linted version
     await linter.saveLintedReadme(owner, repo, lintedContent);
@@ -280,8 +382,12 @@ app.get('/api/lint', async (req, res) => {
   }
 
   try {
-    // Parse GitHub URL
-    const match = repo_url.match(/github\.com\/([^/]+)\/([^/]+)(?:\/|$)/);
+    // Parse GitHub URL - handle multiple formats
+    let match = repo_url.match(/github\.com\/([^/]+)\/([^/]+)(?:\/(?:blob\/[^/]+\/)?README\.md|\/|$)/);
+    if (!match) {
+      // Try alternative formats
+      match = repo_url.match(/github\.com\/([^/]+)\/([^/]+)/);
+    }
     if (!match) {
       return res.status(400).json({ error: 'Invalid GitHub URL format' });
     }
