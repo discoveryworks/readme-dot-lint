@@ -39,7 +39,7 @@ In the spirit of [Convention Over Configuration](https://en.wikipedia.org/wiki/C
 Audit existing repos and, without changing anything other than position, organizing the repos into following sections:
 
 ```
-🌌 Why use ${REPO_NAME}?
+🌌 Why ${DID WE CREATE REPO_NAME}?
 =============================
 
 
@@ -81,7 +81,7 @@ In thinking about it, the key principles seem to be:
 
 ---
 
-## Why do we use the `===` markdown syntax for h1s?
+## Why do we use the `====` markdown syntax for h1s?
 Because it's weird.
 
 Fine, "less common". It helps to disambiguate the readme-dot-lint meta format (setext) from the readme's actual subject matter (often atx).
@@ -89,7 +89,7 @@ Fine, "less common". It helps to disambiguate the readme-dot-lint meta format (s
 Most people use the markdown [ATX syntax](https://spec.commonmark.org/0.31.2/#atx-headings) for H1s.
 
 ```markdown
-# Foo Bar Baz (atx)
+# ATX syntax headers look like this (preceded by an hashmark).
 
 ATX syntax uses a single octothorpe "#" for an h1, two "##" for an h2 etc.
 ```
@@ -97,7 +97,7 @@ ATX syntax uses a single octothorpe "#" for an h1, two "##" for an h2 etc.
 By using the less common, visually more distinctive [setext syntax](https://spec.commonmark.org/0.31.2/#setext-headings),
 
 ```markdown
-Foo Bar Baz (setext)
+Setext syntax headers look like this (equal signs below).
 ====================
 
 Setext gives a heavy underline to h1s
