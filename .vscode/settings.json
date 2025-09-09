@@ -308,5 +308,5 @@
       }
     ]
   },
-  "window.title": "▲ ${rootName}${separator}${profileName}${separator}${activeEditorShort}"
+  "window.title": "▲ README-DOT-LINT - ${activeEditorShort}"
 }
