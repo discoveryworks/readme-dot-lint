@@ -97,7 +97,7 @@ ATX syntax uses a single octothorpe "#" for an h1, two "##" for an h2 etc.
 By using the less common, visually more distinctive [setext syntax](https://spec.commonmark.org/0.31.2/#setext-headings),
 
 ```markdown
-Setext syntax headers look like this (equal signs below).
+Bar Baz Quo (setext)
 ====================
 
 Setext gives a heavy underline to h1s

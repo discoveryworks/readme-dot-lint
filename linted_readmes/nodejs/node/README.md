@@ -17,7 +17,9 @@
 🌸🌸🌸 What does node do?
 =============================
 
-Node.js is an open-source, cross-platform JavaScript runtime environment.🌸🌸🌸🌸 How do I use node?
+Node.js is an open-source, cross-platform JavaScript runtime environment.
+
+🌸🌸🌸🌸 How do I use node?
 =============================
 
 installers, and source tarballs are available at
