@@ -27,6 +27,19 @@ cd service
 npm install
 ```
 
+## Configuration
+
+Copy `.env.example` to `.env` and configure as needed:
+
+```bash
+cp .env.example .env
+```
+
+Environment variables:
+- `PORT`: Server port (default: 3515)
+- `GITHUB_TOKEN`: Optional GitHub personal access token to increase API rate limits from 60/hr to 5000/hr. Get yours at https://github.com/settings/tokens (no scopes needed for public repos)
+- `BASE_URL`: Base URL for the service, used in API responses (default: http://localhost:3515)
+
 ## Running the service
 
 ```bash
@@ -48,6 +61,41 @@ Returns: `{ "linted_url": "http://localhost:3515/owner/repo/README.md" }`
 🌸🌸🌸🌸🌸 Extras
 =============================
 
+## Deployment
+
+### Deploying to Vercel
+
+1. Install Vercel CLI:
+   ```bash
+   npm install -g vercel
+   ```
+
+2. Deploy from the repository root:
+   ```bash
+   vercel
+   ```
+
+3. Configure environment variables in Vercel dashboard:
+   - `GITHUB_TOKEN`: Your GitHub personal access token
+   - `BASE_URL`: Your deployed Vercel URL (e.g., https://your-project.vercel.app)
+
+4. Deploy to production:
+   ```bash
+   vercel --prod
+   ```
+
+The `vercel.json` configuration file handles routing and build settings automatically.
+
+### Other Deployment Options
+
+The service can be deployed to any Node.js hosting platform:
+- Railway: `railway up`
+- Fly.io: `flyctl deploy`
+- Heroku: Standard Node.js buildpack
+- Any VPS with Node.js
+
+Just ensure environment variables are configured in your hosting platform.
+
 ## Architecture
 
 The service consists of:
@@ -59,6 +107,6 @@ The service consists of:
 ## File Structure
 
 Linted READMEs are stored in the repository under:
-`/linted_readmes/{owner}/{repo}/README.md`
+`/cache/{owner}/{repo}/README.md`
 
 These files are checked into version control for persistence and caching.

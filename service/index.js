@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const axios = require('axios');
 const fs = require('fs-extra');
@@ -5,6 +6,8 @@ const path = require('path');
 
 const app = express();
 const PORT = process.env.PORT || 3515;
+const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
+const BASE_URL = process.env.BASE_URL || `http://localhost:${PORT}`;
 
 app.use(express.json());
 
@@ -25,11 +28,16 @@ class ReadmeLinter {
   async fetchGithubReadme(owner, repo) {
     try {
       const url = `https://api.github.com/repos/${owner}/${repo}/readme`;
-      const response = await axios.get(url, {
-        headers: {
-          'Accept': 'application/vnd.github.v3.raw'
-        }
-      });
+      const headers = {
+        'Accept': 'application/vnd.github.v3.raw'
+      };
+
+      // Add GitHub token if available (increases rate limit)
+      if (GITHUB_TOKEN) {
+        headers['Authorization'] = `Bearer ${GITHUB_TOKEN}`;
+      }
+
+      const response = await axios.get(url, { headers });
       return response.data;
     } catch (error) {
       throw new Error(`Failed to fetch README: ${error.message}`);
@@ -321,7 +329,7 @@ class ReadmeLinter {
   }
 
   async saveLintedReadme(owner, repo, lintedContent) {
-    const dirPath = path.join(__dirname, '..', 'linted_readmes', owner, repo);
+    const dirPath = path.join(__dirname, '..', 'cache', owner, repo);
     const filePath = path.join(dirPath, 'README.md');
     
     await fs.ensureDir(dirPath);
@@ -339,7 +347,7 @@ app.get('/:owner/:repo/README.md', async (req, res) => {
   
   try {
     // Check if we already have a linted version
-    const lintedPath = path.join(__dirname, '..', 'linted_readmes', owner, repo, 'README.md');
+    const lintedPath = path.join(__dirname, '..', 'cache', owner, repo, 'README.md');
     
     if (await fs.pathExists(lintedPath)) {
       const lintedContent = await fs.readFile(lintedPath, 'utf8');
@@ -396,9 +404,9 @@ app.get('/api/lint', async (req, res) => {
     }
 
     const [, owner, repo] = match;
-    const lintedUrl = `${req.protocol}://${req.get('host')}/${owner}/${repo}/README.md`;
+    const lintedUrl = `${BASE_URL}/${owner}/${repo}/README.md`;
 
-    res.json({ 
+    res.json({
       linted_url: lintedUrl,
       repo: `${owner}/${repo}`
     });
