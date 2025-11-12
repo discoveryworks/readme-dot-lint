@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>README.lint - Convention Over Configuration for READMEs</title>
+    <meta name="description" content="Transform any GitHub README into a clear, structured README.lint format instantly. No signup required.">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🌸 README.lint</h1>
+            <p class="tagline">Convention Over Configuration for READMEs</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h2>Transform any GitHub README into a clear, structured format</h2>
+            <p>README.lint brings consistency to how repositories describe their purpose, audience, functionality, and usage. Enter any GitHub URL below to see the transformation instantly.</p>
+        </section>
+
+        <section class="demo">
+            <div class="demo-input">
+                <label for="repo-url">GitHub Repository URL</label>
+                <div class="input-group">
+                    <input
+                        type="text"
+                        id="repo-url"
+                        placeholder="https://github.com/facebook/react"
+                        value="https://github.com/facebook/react"
+                    >
+                    <button id="lint-button" class="btn-primary">Lint README</button>
+                </div>
+                <p class="help-text">Try examples:
+                    <a href="#" class="example-link" data-url="https://github.com/facebook/react">React</a>,
+                    <a href="#" class="example-link" data-url="https://github.com/django/django">Django</a>,
+                    <a href="#" class="example-link" data-url="https://github.com/kubernetes/kubernetes">Kubernetes</a>
+                </p>
+            </div>
+
+            <div id="loading" class="loading hidden">
+                <div class="spinner"></div>
+                <p>Transforming README...</p>
+            </div>
+
+            <div id="error" class="error hidden"></div>
+
+            <div id="result" class="result hidden">
+                <div class="result-header">
+                    <h3>Linted README</h3>
+                    <div class="result-actions">
+                        <button id="copy-url-button" class="btn-secondary">Copy URL</button>
+                        <button id="copy-markdown-button" class="btn-secondary">Copy Markdown</button>
+                    </div>
+                </div>
+                <div class="result-url">
+                    <code id="linted-url"></code>
+                </div>
+                <div class="result-content">
+                    <pre id="linted-content"></pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <h2>Why README.lint?</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <h3>🎯 Clear Structure</h3>
+                    <p>Every README answers Why, Who, What, How, and Extras in a consistent format</p>
+                </div>
+                <div class="feature">
+                    <h3>⚡ Instant Transformation</h3>
+                    <p>No signup, no installation. Just paste a GitHub URL and see the result</p>
+                </div>
+                <div class="feature">
+                    <h3>🔧 Easy to Adopt</h3>
+                    <p>Copy the badge, use the template, or integrate with your workflow</p>
+                </div>
+                <div class="feature">
+                    <h3>🌍 Open Standard</h3>
+                    <p>Free and open. Use any emoji theme. Convention over configuration</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="adopt">
+            <h2>Adopt README.lint in Your Repository</h2>
+            <div class="adopt-options">
+                <div class="adopt-option">
+                    <h3>1. Add the Badge</h3>
+                    <pre><code>[![Conforms to README.lint](https://img.shields.io/badge/README.lint-conforming-brightgreen)](https://github.com/discoveryworks/readme-dot-lint)</code></pre>
+                </div>
+                <div class="adopt-option">
+                    <h3>2. Use the Template</h3>
+                    <p>Structure your README with Why, Who, What, How, and Extras sections using setext headers and emoji markers.</p>
+                    <a href="https://github.com/discoveryworks/readme-dot-lint#readme" class="btn-secondary">View Template</a>
+                </div>
+                <div class="adopt-option">
+                    <h3>3. See Examples</h3>
+                    <p>Browse linted READMEs from popular projects to see README.lint in action.</p>
+                    <a href="/showcase" class="btn-secondary">View Showcase</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>
+                README.lint is an open standard.
+                <a href="https://github.com/discoveryworks/readme-dot-lint">View on GitHub</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="/demo.js"></script>
+</body>
+</html>
