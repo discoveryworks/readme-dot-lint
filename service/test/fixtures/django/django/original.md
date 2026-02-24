@@ -1,26 +1,12 @@
-[![Conforms to README.lint](https://img.shields.io/badge/README.lint-conforming-brightgreen)](https://github.com/discoveryworks/readme-dot-lint)
+======
+Django
+======
 
-🌸 Why use django?
-=============================
+Django is a high-level Python web framework that encourages rapid development
+and clean, pragmatic design. Thanks for checking it out.
 
-*Why did django go to the trouble of writing this?*
-
-[This section needs to be filled in by the repository maintainers]
-
-🌸🌸 Who benefits from django?
-=============================
-
-*Who did django write this for?*
-
-[This section needs to be filled in by the repository maintainers]
-
-🌸🌸🌸 What does django do?
-=============================
-
-Django is a high-level Python web framework that encourages rapid development🌸🌸🌸🌸 How do I use django?
-=============================
-
-getting started,
+All documentation is in the "``docs``" directory and online at
+https://docs.djangoproject.com/en/stable/. If you're just getting started,
 here's how we recommend you read the docs:
 
 * First, read ``docs/intro/install.txt`` for instructions on installing Django.
@@ -64,10 +50,3 @@ Supporting the Development of Django
 Django's development depends on your contributions.
 
 If you depend on Django, remember to support the Django Software Foundation: https://www.djangoproject.com/fundraising/
-
-
-🌸🌸🌸🌸🌸 Extras
-=============================
-
-[Additional content from original README, acknowledgments, contributing guidelines, etc.]
-

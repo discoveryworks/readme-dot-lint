@@ -1,41 +1,8 @@
-[![Conforms to README.lint](https://img.shields.io/badge/README.lint-conforming-brightgreen)](https://github.com/discoveryworks/readme-dot-lint)
-
-🌸 Why did we build node?
-=============================
-
-Node.js was built by Ryan Dahl in 2009 primarily to address the limitations of traditional server-side technologies, particularly in handling concurrent connections and I/O operations efficiently. The core motivations behind its creation were:
-
-- Addressing I/O limitations:
-- Enabling event-driven, non-blocking architecture:
-- Leveraging JavaScript on the server-side:
-- Building highly scalable and performant applications:
-
-
-🌸🌸 Who benefits from node?
-=============================
-
-Anyone who wants an efficient, scalable, and unified environment for building modern web applications, particularly those requiring real-time capabilities and high concurrency.
-
-🌸🌸🌸 What does node do?
-=============================
+# Node.js
 
 Node.js is an open-source, cross-platform JavaScript runtime environment.
 
-
-🌸🌸🌸🌸 How do I use node?
-=============================
-
 For information on using Node.js, see the [Node.js website][].
-
-Binaries, installers, and source tarballs are available at
-<https://nodejs.org/en/download/>.
-
-See [BUILDING.md](BUILDING.md) for instructions on how to build Node.js from
-source and a list of supported platforms.
-
-
-🌸🌸🌸🌸🌸 Extras
-=============================
 
 The Node.js project uses an [open governance model](./GOVERNANCE.md). The
 [OpenJS Foundation][] provides support for the project.
@@ -148,6 +115,11 @@ curl -fsO "https://nodejs.org/dist/${VERSION}/SHASUMS256.txt.asc" \
 && gpgv --keyring="/path/to/nodejs-keyring.kbx" --output SHASUMS256.txt < SHASUMS256.txt.asc \
 && shasum --check SHASUMS256.txt --ignore-missing
 ```
+
+## Building Node.js
+
+See [BUILDING.md](BUILDING.md) for instructions on how to build Node.js from
+source and a list of supported platforms.
 
 ## Security
 
@@ -795,6 +767,8 @@ maintaining the Node.js project.
   **Akhil Marsonya** <<akhil.marsonya27@gmail.com>> (he/him)
 * [meixg](https://github.com/meixg) -
   **Xuguang Mei** <<meixuguang@gmail.com>> (he/him)
+* [milesguicent](https://github.com/milesguicent) -
+  **Miles Guicent** <<guicent@pm.me>> (he/him)
 * [preveen-stack](https://github.com/preveen-stack) -
   **Preveen Padmanabhan** <<wide4head@gmail.com>> (he/him)
 * [RaisinTen](https://github.com/RaisinTen) -

@@ -107,7 +107,7 @@ When evaluating linted examples, notice:
 
 ## Caching Behavior
 
-All linted READMEs are cached in `/linted_readmes/{owner}/{repo}/README.md` and committed to version control for:
+All linted READMEs are cached in `/cache/{owner}/{repo}/README.md` and committed to version control for:
 - Fast subsequent requests
 - Historical tracking of transformations
 - Offline availability during development
