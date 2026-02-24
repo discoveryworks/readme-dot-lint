@@ -106,7 +106,7 @@ The service consists of:
 
 ## File Structure
 
-Linted READMEs are stored in the repository under:
-`/cache/{owner}/{repo}/README.md`
+- **Runtime cache**: `/cache/{owner}/{repo}/README.md` (gitignored, regenerated on demand)
+- **Showcase fixtures**: `/service/test/fixtures/{owner}/{repo}/original.md` (tracked, curated examples)
 
-These files are checked into version control for persistence and caching.
+The fixtures directory serves as the manifest of showcase examples for the service.

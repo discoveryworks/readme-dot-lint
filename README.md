@@ -119,10 +119,35 @@ That sounds like a `markdownlint` problem, not an "us" problem. Multiple H1s hav
 
 ---
 
+## Autolint Service
+
+We built an automated linting service that transforms any GitHub README into README.lint format.
+
+### Try it locally
+
+```bash
+cd service
+npm install
+npm start
+```
+
+Then visit: `http://localhost:3515/cosmos/cosmos-sdk/README.md`
+
+### API
+
+```bash
+# Get a linted URL for any GitHub repo
+curl "http://localhost:3515/api/lint?repo_url=https://github.com/facebook/react"
+```
+
+See [service/README.md](service/README.md) for deployment options (Vercel, Railway, etc).
+
+---
+
 ## Process for implementing README.lint in other repos
 1. Submit PRs to any repos which we think would benefit and start a conversation with the authors
 2. add the PR to the [list of README's which have been linted](#linted-readmes)
-3. ...one day, maybe try upgrade this into an actual automated linter. For now, humans do the work.
+3. Or use the [autolint service](#autolint-service) to generate a starting point
 
 ---
 
